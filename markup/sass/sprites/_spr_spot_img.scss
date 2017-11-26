@@ -1,0 +1,55 @@
+@mixin spr_spot_img($important:null){
+    @if $important {
+        $important : unquote('!important');
+    }
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url('../images/spot/spr_spot_img.png') $important;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+$spr_spot_img: (
+    spritesheet_name: spr_spot_img,
+    total_width: 2566px,
+    total_height: 1210px,
+    total_width_retina: 1283px,
+    total_height_retina: 605px,
+    about_img1: (
+        offset_x: -1262px,
+        offset_y: 0,
+        width: 1304px,
+        height: 320px,
+        offset_x_retina: -631px,
+        offset_y_retina: 0,
+        width_retina: 652px,
+        height_retina: 160px),
+    service_img1: (
+        offset_x: 0,
+        offset_y: -712px,
+        width: 1258px,
+        height: 498px,
+        offset_x_retina: 0,
+        offset_y_retina: -356px,
+        width_retina: 629px,
+        height_retina: 249px),
+    service_img2: (
+        offset_x: -1262px,
+        offset_y: -324px,
+        width: 1304px,
+        height: 320px,
+        offset_x_retina: -631px,
+        offset_y_retina: -162px,
+        width_retina: 652px,
+        height_retina: 160px),
+    spot_img01: (
+        offset_x: 0,
+        offset_y: 0,
+        width: 1258px,
+        height: 708px,
+        offset_x_retina: 0,
+        offset_y_retina: 0,
+        width_retina: 629px,
+        height_retina: 354px),
+);
