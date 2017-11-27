@@ -13,9 +13,9 @@
 $spr_spot_img: (
     spritesheet_name: spr_spot_img,
     total_width: 2520px,
-    total_height: 1860px,
+    total_height: 2184px,
     total_width_retina: 1260px,
-    total_height_retina: 930px,
+    total_height_retina: 1092px,
     about_img1: (
         offset_x: 0,
         offset_y: -1216px,
@@ -34,6 +34,15 @@ $spr_spot_img: (
         offset_y_retina: -356px,
         width_retina: 629px,
         height_retina: 250px),
+    science_img2: (
+        offset_x: 0,
+        offset_y: -1540px,
+        width: 1304px,
+        height: 320px,
+        offset_x_retina: 0,
+        offset_y_retina: -770px,
+        width_retina: 652px,
+        height_retina: 160px),
     service_img1: (
         offset_x: -1262px,
         offset_y: 0,
@@ -45,11 +54,11 @@ $spr_spot_img: (
         height_retina: 249px),
     service_img2: (
         offset_x: 0,
-        offset_y: -1540px,
+        offset_y: -1864px,
         width: 1304px,
         height: 320px,
         offset_x_retina: 0,
-        offset_y_retina: -770px,
+        offset_y_retina: -932px,
         width_retina: 652px,
         height_retina: 160px),
     service_img3: (

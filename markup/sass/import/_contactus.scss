@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.contact_map-area {
+  width: 1258px;
+  height: 498px;
+  border: 1px solid $C-font-light2;
+  margin: 0 auto;
+  position: relative;
+
+}
+.contact {
+  position: relative;
+  height: 490px;
+  width: 1258px;
+  margin: 0 auto;
+
+
+  &__stit {
+    position: absolute;
+    left:119px;
+    top:129px;
+    font-family: $F-family-en;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-xbig;
+    color: #818e9f;
+    letter-spacing: -1px;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &:before {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      width:36px;
+      height:5px;
+      margin: 12px 10px 0 0;
+      background: #818e9f;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: 435px;
+    top: 129px;
+  }
+  &__info &__tit {
+    position: relative;
+    font-size: $F-size-xxbig;
+  }
+  &__info &__txt {
+    margin-top: 60px;
+    font-size: $F-size;
+    color: $C-font-basic;
+  }
+}
