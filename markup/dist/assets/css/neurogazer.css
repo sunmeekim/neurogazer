@@ -797,7 +797,7 @@ i, cite, em, var, address, dfn {
   height: 320px;
   width: 1304px;
   height: 320px;
-  background-position: -1262px 0;
+  background-position: 0 -1216px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1114,17 +1114,17 @@ i, cite, em, var, address, dfn {
   size: 1.3rem;
 }
 
-.service_spot {
+.science_spot {
   position: relative;
   width: 1258px;
   height: 498px;
   margin: 0 auto;
 }
 
-.service_spot .spot1__img {
+.science_spot .spot1__img {
   width: 1258px;
   height: 498px;
-  background-position: 0 -712px;
+  background-position: -1262px 0;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1133,18 +1133,18 @@ i, cite, em, var, address, dfn {
   content: '';
 }
 
-.service_spot .spot1__info {
+.science_spot .spot1__info {
   position: absolute;
   left: 720px;
   top: 176px;
 }
 
-.service_spot .spot1__info-tit {
+.science_spot .spot1__info-tit {
   font-size: 3.6rem;
   color: #fff;
 }
 
-.service_spot .spot1__info-text {
+.science_spot .spot1__info-text {
   padding-top: 20px;
   color: #fff;
   font-size: 1.6rem;
@@ -1266,7 +1266,7 @@ i, cite, em, var, address, dfn {
   height: 320px;
   width: 1304px;
   height: 320px;
-  background-position: -1262px -324px;
+  background-position: 0 -1540px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1428,7 +1428,7 @@ i, cite, em, var, address, dfn {
 
 .service_cont4 {
   background: url(../images/repeat_bg.png) repeat 0 0;
-  height: 1320px;
+  height: 865px;
 }
 
 .service_cont4__area {
@@ -1509,66 +1509,621 @@ i, cite, em, var, address, dfn {
   bottom: -5px;
 }
 
-.service_cont4__history .service_cont4__his-box {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 50px;
+.service_cont4__info .service_cont4__txt {
+  font-size: 1.4rem;
+  color: #888;
+  padding: 70px 0 50px;
 }
 
-.service_cont4__history .service_cont4__his-box:before, .service_cont4__history .service_cont4__his-box:after {
+.service_cont4__info .service_cont4__img {
+  width: 742px;
+  height: 482px;
+  background-position: -1262px -502px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spot/spr_spot_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.service_cont5 {
+  background: url(../images/repeat_bg.png) repeat 0 0;
+  height: 455px;
+}
+
+.service_cont5__area {
+  width: 1258px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service_cont5__stit {
+  position: absolute;
+  left: 132px;
+  top: 100px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #818e9f;
+  letter-spacing: -1px;
+}
+
+.service_cont5__stit span {
+  display: inline-block;
+}
+
+.service_cont5__stit:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 5px;
+  margin: 12px 10px 0 0;
+  background: #818e9f;
+}
+
+.service_cont5__info {
+  position: absolute;
+  left: 455px;
+  top: 100px;
+}
+
+.service_cont5__info .service_cont5__tit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3.4rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: #242424;
+}
+
+.service_cont5__info .service_cont5__tit .gray {
+  color: #888;
+  font-size: 3.6rem;
+}
+
+.service_cont5__info .service_cont5__tit:before {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+.service_cont5__info .service_cont5__tit:after {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -170px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -30px;
+  bottom: -5px;
+}
+
+.science_spot {
+  width: 1258px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.science_spot .spot2__img {
+  width: 1258px;
+  height: 500px;
+  background-position: 0 -712px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spot/spr_spot_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.science_spot .spot2__info {
+  position: absolute;
+  left: 0;
+  top: 170px;
+  right: 0;
+  text-align: center;
+}
+
+.science_spot .spot2__info-tit {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 7.2rem;
+  color: #fff;
+}
+
+.science_spot .spot2__info-tit strong {
+  font-weight: 700;
+}
+
+.science_spot .spot2__info-text {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+
+.science_cont1 {
+  position: relative;
+  height: 490px;
+  width: 1258px;
+  margin: 0 auto;
+}
+
+.science_cont1:before {
+  width: 50px;
+  height: 146px;
+  background-position: -575px 0;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: 320px;
+  bottom: 50px;
+}
+
+.science_cont1:after {
+  content: '';
+  width: 1px;
+  height: 381px;
+  position: absolute;
+  right: 63px;
+  top: 148px;
+  background: #000;
+}
+
+.science_cont1__stit {
+  position: absolute;
+  left: 132px;
+  top: 148px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #818e9f;
+  letter-spacing: -1px;
+}
+
+.science_cont1__stit span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.science_cont1__stit:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 5px;
+  margin: 12px 10px 0 0;
+  background: #818e9f;
+}
+
+.science_cont1__info {
+  position: absolute;
+  left: 453px;
+  top: 105px;
+}
+
+.science_cont1__info .science_cont1__tit {
+  position: relative;
+  font-size: 3.6rem;
+}
+
+.science_cont1__info .science_cont1__tit:before {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+.science_cont1__info .science_cont1__tit:after {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -170px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: -5px;
+}
+
+.science_cont1__info .science_cont1__txt {
+  margin-top: 60px;
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.service_cont2 {
+  position: relative;
+  height: 320px;
+  background: #000;
+  text-align: center;
+}
+
+.service_cont2__img {
+  display: inline-block;
+  vertical-align: top;
+  width: 1304px;
+  height: 320px;
+  width: 1304px;
+  height: 320px;
+  background-position: 0 -1540px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spot/spr_spot_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin: 0 auto;
+}
+
+.service_cont3 {
+  position: relative;
+  height: 865px;
+  width: 1258px;
+  margin: 0 auto;
+}
+
+.service_cont3:before {
+  width: 152px;
+  height: 221px;
+  background-position: -419px 0;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: 195px;
+  bottom: 95px;
+}
+
+.service_cont3__stit {
+  position: absolute;
+  left: 132px;
+  top: 135px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #818e9f;
+  letter-spacing: -1px;
+}
+
+.service_cont3__stit span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.service_cont3__stit:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 5px;
+  margin: 12px 10px 0 0;
+  background: #818e9f;
+}
+
+.service_cont3__info {
+  position: absolute;
+  left: 453px;
+  top: 130px;
+}
+
+.service_cont3__info .service_cont3__tit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3.6rem;
+  line-height: 1.5;
+}
+
+.service_cont3__info .service_cont3__tit:before {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+.service_cont3__info .service_cont3__tit:after {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -170px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -30px;
+  bottom: -5px;
+}
+
+.service_cont3__info .service_cont3__tit2 {
+  padding-top: 50px;
+  font-size: 1.6rem;
+  color: #242424;
+}
+
+.service_cont3__info .service_cont3__txt {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #888;
+  letter-spacing: -1px;
+}
+
+.service_cont3__info .service_cont3__area {
+  margin-top: 40px;
+}
+
+.service_cont3__info .service_cont3__list {
+  margin-left: -12px;
+}
+
+.service_cont3__info .service_cont3__list:before, .service_cont3__info .service_cont3__list:after {
   display: table;
   content: "";
 }
 
-.service_cont4__history .service_cont4__his-box:after {
+.service_cont3__info .service_cont3__list:after {
   clear: both;
 }
 
-.service_cont4__history .service_cont4__his-year {
+.service_cont3__info .service_cont3__item {
   float: left;
-  font-family: "Barlow", sans-serif !important;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.8rem;
+  margin-left: 12px;
+  width: 233px;
 }
 
-.service_cont4__history .service_cont4__his-year strong {
+.service_cont3__info .service_cont3__item-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 233px;
+  height: 180px;
+  background: #ccc;
+}
+
+.service_cont3__info .service_cont3__item-tit {
+  padding-top: 30px;
   font-size: 2.4rem;
+  color: #888;
+  text-align: center;
 }
 
-.service_cont4__history .service_cont4__his-year:after {
+.service_cont3__info .service_cont3__item-txt {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  color: #000;
+  text-align: center;
+}
+
+.service_cont4 {
+  background: url(../images/repeat_bg.png) repeat 0 0;
+  height: 865px;
+}
+
+.service_cont4__area {
+  width: 1258px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service_cont4__stit {
+  position: absolute;
+  left: 132px;
+  top: 100px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #818e9f;
+  letter-spacing: -1px;
+}
+
+.service_cont4__stit:before {
   content: '';
   display: inline-block;
   vertical-align: top;
-  width: 35px;
-  height: 1px;
-  background: #fff;
-  margin: 25px 0 0 20px;
+  width: 36px;
+  height: 5px;
+  margin: 12px 10px 0 0;
+  background: #818e9f;
 }
 
-.service_cont4__history .service_cont4__his-list {
-  float: left;
-  margin: 3px 0 0 53px;
+.service_cont4__info {
+  position: absolute;
+  left: 455px;
+  top: 100px;
 }
 
-.service_cont4__history .service_cont4__his-item {
-  margin-top: 5px;
-}
-
-.service_cont4__history .service_cont4__his-month {
+.service_cont4__info .service_cont4__tit {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  min-width: 35px;
-  color: #fff;
+  font-size: 3.4rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: #242424;
+}
+
+.service_cont4__info .service_cont4__tit .gray {
+  color: #888;
+  font-size: 3.6rem;
+}
+
+.service_cont4__info .service_cont4__tit:before {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+.service_cont4__info .service_cont4__tit:after {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -170px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -30px;
+  bottom: -5px;
+}
+
+.service_cont4__info .service_cont4__txt {
+  font-size: 1.4rem;
+  color: #888;
+  padding: 70px 0 50px;
+}
+
+.service_cont4__info .service_cont4__img {
+  width: 742px;
+  height: 482px;
+  background-position: -1262px -502px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spot/spr_spot_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.service_cont5 {
+  background: url(../images/repeat_bg.png) repeat 0 0;
+  height: 455px;
+}
+
+.service_cont5__area {
+  width: 1258px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.service_cont5__stit {
+  position: absolute;
+  left: 132px;
+  top: 100px;
+  font-family: "Open Sans", sans-serif !important;
   font-weight: 700;
-  size: 1.3rem;
+  font-size: 2.3rem;
+  color: #818e9f;
+  letter-spacing: -1px;
 }
 
-.service_cont4__history .service_cont4__his-data {
+.service_cont5__stit span {
+  display: inline-block;
+}
+
+.service_cont5__stit:before {
+  content: '';
   display: inline-block;
   vertical-align: top;
-  color: #fff;
-  size: 1.3rem;
+  width: 36px;
+  height: 5px;
+  margin: 12px 10px 0 0;
+  background: #818e9f;
+}
+
+.service_cont5__info {
+  position: absolute;
+  left: 455px;
+  top: 100px;
+}
+
+.service_cont5__info .service_cont5__tit {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3.4rem;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: #242424;
+}
+
+.service_cont5__info .service_cont5__tit .gray {
+  color: #888;
+  font-size: 3.6rem;
+}
+
+.service_cont5__info .service_cont5__tit:before {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+
+.service_cont5__info .service_cont5__tit:after {
+  width: 28px;
+  height: 16px;
+  background-position: -575px -170px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -30px;
+  bottom: -5px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
@@ -1611,8 +2166,8 @@ i, cite, em, var, address, dfn {
   .spot_area .spot1__img {
     width: 1258px;
     height: 708px;
-    background-position: 0 0;
-    background-size: 2564px auto;
+    background-position: -1486px 0;
+    background-size: 2744px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -1647,8 +2202,8 @@ i, cite, em, var, address, dfn {
   .cont2__img {
     width: 1304px;
     height: 320px;
-    background-position: -1260px 0;
-    background-size: 2564px auto;
+    background-position: 0 -1468px;
+    background-size: 2744px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -1692,11 +2247,11 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
-  .service_spot .spot1__img {
+  .science_spot .spot1__img {
     width: 1258px;
     height: 498px;
-    background-position: 0 -710px;
-    background-size: 2564px auto;
+    background-position: -1260px -966px;
+    background-size: 2744px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -1743,8 +2298,8 @@ i, cite, em, var, address, dfn {
   .service_cont2__img {
     width: 1304px;
     height: 320px;
-    background-position: -1260px -322px;
-    background-size: 2564px auto;
+    background-position: -1306px -1468px;
+    background-size: 2744px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -1801,6 +2356,198 @@ i, cite, em, var, address, dfn {
     content: '';
   }
   .service_cont4__info .service_cont4__tit:after {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -166px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont4__info .service_cont4__img {
+    width: 1484px;
+    height: 964px;
+    background-position: 0 0;
+    background-size: 2744px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spot/spr_spot_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont5__info .service_cont5__tit:before {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont5__info .service_cont5__tit:after {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -166px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .science_spot .spot2__img {
+    width: 1258px;
+    height: 500px;
+    background-position: 0 -966px;
+    background-size: 2744px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spot/spr_spot_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .science_cont1:before {
+    width: 50px;
+    height: 146px;
+    background-position: -571px 0;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .science_cont1__info .science_cont1__tit:before {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .science_cont1__info .science_cont1__tit:after {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -166px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont2__img {
+    width: 1304px;
+    height: 320px;
+    background-position: -1306px -1468px;
+    background-size: 2744px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spot/spr_spot_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont3:before {
+    width: 152px;
+    height: 221px;
+    background-position: -417px 0;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont3__info .service_cont3__tit:before {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont3__info .service_cont3__tit:after {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -166px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont4__info .service_cont4__tit:before {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont4__info .service_cont4__tit:after {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -166px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont4__info .service_cont4__img {
+    width: 1484px;
+    height: 964px;
+    background-position: 0 0;
+    background-size: 2744px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spot/spr_spot_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont5__info .service_cont5__tit:before {
+    width: 28px;
+    height: 16px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .service_cont5__info .service_cont5__tit:after {
     width: 28px;
     height: 16px;
     background-position: -571px -166px;
