@@ -30,8 +30,8 @@ web/pc/html
 html_build
 dist/admin.app.js
 .map
-# markup/html/
-# markup/img/
-# markup/sass/
-# Gruntfile.js
+markup/html/
+markup/img/
+markup/sass/
+Gruntfile.js
 
