@@ -1,0 +1,350 @@
+@charset "UTF-8";
+.spot_area {
+  position: relative;
+  width: 1258px;
+  height: 708px;
+  margin: 0 auto;
+  .spot1 {
+    &__img {
+      @include use-sprite(spot_img01, $spr_spot_img, $spr_spot_img_2x);
+    }
+    &__info {
+      position: absolute;
+      left: 627px;
+      top: 294px;
+    }
+    &__info-logo {
+      @include use-sprite(logo_white);
+    }
+    &__info-text {
+      padding-top: 20px;
+      color: $C-white;
+      font-size: $F-size-big;
+      line-height: 1.5;
+      letter-spacing: -1px;
+    }
+  }
+}
+.cont1 {
+  position: relative;
+  height: 500px;
+  width: 1258px;
+  margin: 0 auto;
+  &:before {
+    @include use-sprite(bg01);
+    position: absolute;
+    left: 210px;
+    bottom: -12px;
+  }
+  &:after {
+    content: '';
+    width: 1px;
+    height: 445px;
+    position: absolute;
+    right: 63px;
+    top: -65px;
+    background:$C-black;
+  }
+
+  &__stit {
+    position: absolute;
+    left:132px;
+    top:112px;
+    font-family: $F-family-en;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-xbig;
+    color: #818e9f;
+    letter-spacing: -1px;
+
+    &:before {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      width:36px;
+      height:5px;
+      margin: 12px 10px 0 0;
+      background: #818e9f;
+    }
+  }
+  &__info {
+    position: absolute;
+    left: 453px;
+    top: 105px;
+  }
+  &__info &__tit {
+    font-family: $F-family-en2;
+    font-size: 6.0rem;
+    line-height: 1.1;
+  }
+  &__info &__txt {
+    margin-top: 60px;
+    font-size: $F-size;
+    color: $C-font-basic;
+  }
+}
+.cont2 {
+  position:relative;
+  height: 320px;
+  background: $C-black;
+  text-align: center;
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 1304px;
+    height: 320px;
+    @include use-sprite(about_img1, $spr_spot_img, $spr_spot_img_2x);
+    margin: 0 auto;
+  }
+}
+.cont3 {
+  background:url(../images/repeat_bg.png) repeat 0 0;
+
+  &__team1 {
+    background: $C-white;
+    position: relative;
+  }
+  &__team1 &__team1-area {
+    width: 1258px;
+    height:443px;
+    margin: 0 auto;
+    position: relative;
+
+    &:after {
+      @include use-sprite(bg02);
+      position: absolute;
+      right: 122px;
+      bottom: -75px;
+    }
+
+  }
+  &__team1 &__stit {
+    position: absolute;
+    left:132px;
+    top:275px;
+    font-family: $F-family-en;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-xbig;
+    color: #818e9f;
+    letter-spacing: -1px;
+
+    &:before {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      width:36px;
+      height:5px;
+      margin: 12px 10px 0 0;
+      background: #818e9f;
+    }
+  }
+
+  &__team1 &__tit {
+    position: absolute;
+    left:468px;
+    top:102px;
+    font-size: 4.8rem;
+    line-height: 1.1;
+    color: #242424;
+  }
+
+  &__team1 &__info {
+    position: absolute;
+    left: 468px;
+    top: 277px;
+
+  }
+  &__team1 &__team-name {
+    font-size: 1.8rem;
+    font-weight: $F-weight-bold;
+    color:#242424;
+  }
+  &__team-list {
+    margin: 10px 0 0;
+    @include clear;
+  }
+  &__team-item {
+    float:left;
+    width: 283px;
+    min-height: 275px;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+    img {
+      width: 178px;
+      height: 178px;
+    }
+  }
+  &__name {
+    padding-top: 15px;
+    font-size: 1.8rem;
+    color: #010101;
+    font-weight: $F-weight-bold;
+  }
+  &__desc {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    color: #010101;
+  }
+
+
+  &__team2 {
+    width: 1258px;
+    margin: 0 auto;
+    padding: 300px 0 0;
+    position:relative;
+    &:after {
+      content: '';
+      width: 1px;
+      height: 445px;
+      position: absolute;
+      right: 63px;
+      top: 25px;
+      background:$C-black;
+    }
+  }
+
+  &__team2 &__tit {
+    margin-left: 130px;
+    font-size: 1.8rem;
+    color: $C-black;
+    font-weight: $F-weight-bold;
+  }
+
+  &__team2 &__team-list {
+    margin-left: 130px;
+  }
+  &__team2 &__name{
+    padding-top: 50px;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+  }
+
+
+  &__team3 {
+    width: 1258px;
+    margin: 0 auto;
+    padding: 80px 0 180px;
+  }
+
+  &__team3 &__tit {
+    margin-left: 130px;
+    font-size: 1.8rem;
+    color: $C-black;
+    font-weight: $F-weight-bold;
+  }
+
+  &__team3 &__team-list {
+    margin-left: 130px;
+  }
+  &__team3 &__name{
+    padding-top: 30px;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+  }
+}
+.cont4 {
+  background: #a2b5be;
+  padding: 110px 0;
+
+  &__area {
+    width: 1258px;
+    margin: 0 auto;
+    position:relative;
+
+    &:before {
+      position: absolute;
+      left: 150px;
+      top: 60px;
+      @include use-sprite(bg04);
+    }
+    &:after {
+      position: absolute;
+      right: 170px;
+      top: -125px;
+      @include use-sprite(bg03);
+    }
+  }
+  &__stit {
+    margin: 2px 0 0 149px;
+    font-family: $F-family-en;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-xbig;
+    color: $C-white;
+    letter-spacing: -1px;
+
+    &:before {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      width:36px;
+      height:5px;
+      margin: 12px 10px 0 0;
+      background: $C-white;
+    }
+  }
+  &__info {
+    padding: 40px 140px 0 455px;
+  }
+  &__info &__tit {
+    font-size: 2.4rem;
+    color: $C-white;
+    font-weight: $F-weight-bold;
+  }
+
+  &__history &__his-box {
+    box-sizing: border-box;
+    margin-top: 50px;
+    @include clear;
+  }
+
+  &__history &__his-year {
+    float:left;
+    font-family: $F-family-number;
+    color: $C-white;
+    font-weight: $F-weight-bold;
+    font-size: 1.8rem;
+    strong {
+      font-size: 2.4rem;
+    }
+    &:after {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      width: 35px;
+      height: 1px;
+      background: $C-white;
+      margin: 25px 0 0 20px;
+    }
+  }
+
+  &__history &__his-list {
+    float:left;
+    margin: 3px 0 0 53px;
+  }
+  &__history &__his-item {
+    margin-top: 5px;
+  }
+  &__history &__his-month {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 35px;
+    color: $C-white;
+    font-weight:$F-weight-bold;
+    size: $F-size-under;
+  }
+  &__history &__his-data {
+    display: inline-block;
+    vertical-align: top;
+    color: $C-white;
+    size: $F-size-under;
+  }
+}

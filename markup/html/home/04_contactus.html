@@ -1,0 +1,89 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : contactus","filePath": "../"})
+<body>
+<div class="wrap">
+    <!-- header_area -->
+    @@include('top.html')
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contact_map-area">
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = {lat: 37.526, lng: 127.036};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyH9HpSvaICUj3gipQ-QQKE5IuIkrPSoU&callback=initMap">
+            </script>
+        </div>
+
+        <div class="contact">
+            <div class="contact__stit">
+                <span>OFFICE</span>
+            </div>
+            <div class="contact__info">
+                <div class="contact__tit">NEUROGAZER</div>
+                <div class="contact__addr">
+                    06017<br>
+                    대한민국 서울특별시 강남구 압구정로 46길 28 3층,
+                </div>
+                <div class="contact__email">
+                    <span class="contact__email-label">E-Mail</span>
+                    <a href="mailto:info@neurogazer.com" class="contact__email-link">info@neurogazer.com</a>
+                </div>
+                <div class="contact__sns">
+                    <a href="#" class="contact__sns-facebook" target="_blank"><span class="g_invisible">NEUROGAZER facebook</span></a>
+                    <a href="#" class="contact__sns-twitter" target="_blank"><span class="g_invisible">NEUROGAZER twitter</span></a>
+                    <a href="#" class="contact__sns-youtube" target="_blank"><span class="g_invisible">NEUROGAZER youtube</span></a>
+                </div>
+            </div>
+            <div class="contact__form">
+                <div class="form-group">
+                    <div class="contact__form-box">
+                        <label class="control-label">
+                            NAME <span class="symbol required"></span>
+                        </label>
+                        <input type="text" placeholder="" class="form-control" name="firstName" required="" style="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="contact__form-box">
+                        <label class="control-label">
+                            EMAIL <span class="symbol required"></span>
+                        </label>
+                        <input type="text" placeholder="" class="form-control" name="email" required="" style="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="contact__form-box">
+                        <label class="control-label">
+                            MESSAGE
+                        </label>
+                        <div class="contact__text-box">
+                            <textarea placeholder=""  class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">CONTACT US</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+
+</div>
+</body>
+</html>
