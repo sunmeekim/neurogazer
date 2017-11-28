@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: $F-size;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-right:3px;
+  border: 1px solid transparent;
+  outline: 0;
+
+  &.btn-primary {
+    background: #3779de;
+    border-color: #4444e6;
+    color: $C-white;
+  }
+}

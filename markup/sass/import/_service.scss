@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.science_spot {
+.service_spot {
   position: relative;
   width: 1258px;
   height: 498px;
   margin: 0 auto;
-  .spot1 {
+  .spot2 {
     &__img {
       @include use-sprite(service_img1, $spr_spot_img, $spr_spot_img_2x);
     }
@@ -195,9 +195,15 @@
   &__info &__item-img {
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
     width: 233px;
     height: 180px;
     background: #ccc;
+
+    img {
+      width: 233px;
+      height: 180px;
+    }
   }
   &__info &__item-tit {
     padding-top: 30px;

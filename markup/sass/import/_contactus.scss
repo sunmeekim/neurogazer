@@ -5,11 +5,16 @@
   border: 1px solid $C-font-light2;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 
+  #map {
+    width: 100%;
+    height: 498px;
+  }
 }
 .contact {
   position: relative;
-  height: 490px;
+  height: 670px;
   width: 1258px;
   margin: 0 auto;
 
@@ -17,7 +22,7 @@
   &__stit {
     position: absolute;
     left:119px;
-    top:129px;
+    top:120px;
     font-family: $F-family-en;
     font-weight: $F-weight-bold;
     font-size: $F-size-xbig;
@@ -41,16 +46,109 @@
   }
   &__info {
     position: absolute;
-    left: 435px;
-    top: 129px;
+    left: 448px;
+    top: 120px;
+    width: 315px;
   }
   &__info &__tit {
-    position: relative;
-    font-size: $F-size-xxbig;
+    font-family: $F-family-en;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
-  &__info &__txt {
-    margin-top: 60px;
-    font-size: $F-size;
-    color: $C-font-basic;
+  &__info &__addr {
+    font-size: 1.2rem;
+    color:#242424;
+    line-height: 1.4;
+    padding-top: 18px;
+  }
+  &__info &__email {
+    font-family: $F-family-en2;
+    font-size: 1.2rem;
+    color:#242424;
+    line-height: 1.4;
+    padding-top: 18px;
+  }
+  &__email &__email-label {
+    padding-right: 10px;
+  }
+  &__email &__email-link {
+    color:#242424;
+  }
+  &__info &__sns {
+    padding-top: 40px;
+    margin-left: -18px;
+
+  }
+  &__sns-facebook,
+  &__sns-twitter,
+  &__sns-youtube {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    margin: 0 2px;
+    height: 18px;
+    text-align: center;
+  }
+  &__sns-facebook {
+    &:before {
+      @include use-sprite(ico_facebook);
+    }
+  }
+  &__sns-twitter {
+    &:before {
+      @include use-sprite(ico_twitter);
+      margin-top: 2px;
+    }
+  }
+  &__sns-youtube {
+    &:before {
+      @include use-sprite(ico_youtube);
+    }
+  }
+
+  &__form {
+    width: 350px;
+    position: absolute;
+    top: 100px;
+    left: 765px;
+    font-size: 1.2rem;
+    .form-group {
+      margin: 10px 0;
+    }
+    .control-label {
+      float:left;
+      width : 60px;
+      padding-left: 20px;
+      margin-top: 7px;
+    }
+    .form-control {
+      float:left;
+      width: 250px;
+    }
+  }
+  &__form &__form-box {
+    box-sizing: border-box;
+    background: $C-bgColor;
+    border: 1px solid #d5dcdc;
+    padding: 10px 0;
+
+    @include clear;
+  }
+  &__form &__text-box {
+    clear:both;
+    display: block;
+    padding: 0 10px;
+  }
+  &__text-box {
+
+    .form-control {
+      display: block;
+      width: 100%;
+      height: 150px;
+    }
+  }
+  .btn-primary {
+    font-size: 1.2rem;
+    font-family: $F-family-en;
   }
 }

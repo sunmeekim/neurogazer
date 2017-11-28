@@ -4,7 +4,7 @@
   height: 500px;
   margin: 0 auto;
   position: relative;
-  .spot2 {
+  .spot3 {
     &__img {
       @include use-sprite(science_img1, $spr_spot_img, $spr_spot_img_2x);
 
@@ -183,6 +183,11 @@
     width:839px;
     height:402px;
     background:#ccc;
+    overflow: hidden;
+    img {
+      width:839px;
+      height:402px;
+    }
   }
   &__people &__people-box {
     margin-top:50px;
@@ -265,6 +270,10 @@
     border-radius: 50%;
     background: #000;
     overflow: hidden;
+    img {
+      width: 178px;
+      height: 178px;
+    }
   }
   &__name {
     padding-top: 45px;

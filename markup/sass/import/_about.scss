@@ -178,6 +178,10 @@
     border-radius: 50%;
     background: #000;
     overflow: hidden;
+    img {
+      width: 178px;
+      height: 178px;
+    }
   }
   &__name {
     padding-top: 15px;

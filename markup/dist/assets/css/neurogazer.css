@@ -427,7 +427,7 @@ i, cite, em, var, address, dfn {
 .header .logo__link {
   width: 137px;
   height: 24px;
-  background-position: -419px -358px;
+  background-position: -419px -381px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -649,7 +649,7 @@ i, cite, em, var, address, dfn {
 .footer .foot_area .foot_copy:after {
   width: 117px;
   height: 20px;
-  background-position: -419px -386px;
+  background-position: -263px -462px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -664,6 +664,50 @@ i, cite, em, var, address, dfn {
   display: inline-block;
   vertical-align: top;
   margin-top: 3px;
+}
+
+/* component */
+.form-group .control-label {
+  font-family: "Open Sans", sans-serif !important;
+  color: #888;
+}
+
+.form-group .symbol {
+  font-size: 1.2rem;
+}
+
+.form-group .symbol:after {
+  content: '*';
+}
+
+.form-group .form-control {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.4rem;
+  border: 0;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  outline: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-right: 3px;
+  border: 1px solid transparent;
+  outline: 0;
+}
+
+.btn.btn-primary {
+  background: #3779de;
+  border-color: #4444e6;
+  color: #fff;
 }
 
 /* import */
@@ -695,7 +739,7 @@ i, cite, em, var, address, dfn {
 .spot_area .spot1__info-logo {
   width: 228px;
   height: 39px;
-  background-position: -240px -419px;
+  background-position: -263px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -826,7 +870,7 @@ i, cite, em, var, address, dfn {
 .cont3__team1 .cont3__team1-area:after {
   width: 129px;
   height: 152px;
-  background-position: 0 -419px;
+  background-position: -419px -225px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -910,6 +954,11 @@ i, cite, em, var, address, dfn {
   border-radius: 50%;
   background: #000;
   overflow: hidden;
+}
+
+.cont3__img img {
+  width: 178px;
+  height: 178px;
 }
 
 .cont3__name {
@@ -1014,7 +1063,7 @@ i, cite, em, var, address, dfn {
   top: -125px;
   width: 103px;
   height: 103px;
-  background-position: -133px -419px;
+  background-position: -156px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1114,14 +1163,14 @@ i, cite, em, var, address, dfn {
   size: 1.3rem;
 }
 
-.science_spot {
+.service_spot {
   position: relative;
   width: 1258px;
   height: 498px;
   margin: 0 auto;
 }
 
-.science_spot .spot1__img {
+.service_spot .spot2__img {
   width: 1258px;
   height: 498px;
   background-position: -1262px 0;
@@ -1133,18 +1182,18 @@ i, cite, em, var, address, dfn {
   content: '';
 }
 
-.science_spot .spot1__info {
+.service_spot .spot2__info {
   position: absolute;
   left: 720px;
   top: 176px;
 }
 
-.science_spot .spot1__info-tit {
+.service_spot .spot2__info-tit {
   font-size: 3.6rem;
   color: #fff;
 }
 
-.science_spot .spot1__info-text {
+.service_spot .spot2__info-text {
   padding-top: 20px;
   color: #fff;
   font-size: 1.6rem;
@@ -1407,9 +1456,15 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__item-img {
   display: inline-block;
   vertical-align: top;
+  overflow: hidden;
   width: 233px;
   height: 180px;
   background: #ccc;
+}
+
+.service_cont3__info .service_cont3__item-img img {
+  width: 233px;
+  height: 180px;
 }
 
 .service_cont3__info .service_cont3__item-tit {
@@ -1621,7 +1676,7 @@ i, cite, em, var, address, dfn {
   position: relative;
 }
 
-.science_spot .spot2__img {
+.science_spot .spot3__img {
   width: 1258px;
   height: 500px;
   background-position: 0 -712px;
@@ -1633,7 +1688,7 @@ i, cite, em, var, address, dfn {
   content: '';
 }
 
-.science_spot .spot2__info {
+.science_spot .spot3__info {
   position: absolute;
   left: 0;
   top: 170px;
@@ -1641,17 +1696,17 @@ i, cite, em, var, address, dfn {
   text-align: center;
 }
 
-.science_spot .spot2__info-tit {
+.science_spot .spot3__info-tit {
   font-family: "Open Sans", sans-serif !important;
   font-size: 7.2rem;
   color: #fff;
 }
 
-.science_spot .spot2__info-tit strong {
+.science_spot .spot3__info-tit strong {
   font-weight: 700;
 }
 
-.science_spot .spot2__info-text {
+.science_spot .spot3__info-text {
   padding-top: 20px;
   color: #fff;
   font-size: 1.6rem;
@@ -1669,7 +1724,7 @@ i, cite, em, var, address, dfn {
 .science_cont1:before {
   width: 152px;
   height: 129px;
-  background-position: -419px -225px;
+  background-position: 0 -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1851,6 +1906,12 @@ i, cite, em, var, address, dfn {
   width: 839px;
   height: 402px;
   background: #ccc;
+  overflow: hidden;
+}
+
+.science_cont3__people-img img {
+  width: 839px;
+  height: 402px;
 }
 
 .science_cont3__people .science_cont3__people-box {
@@ -1953,6 +2014,11 @@ i, cite, em, var, address, dfn {
   overflow: hidden;
 }
 
+.science_cont4__img img {
+  width: 178px;
+  height: 178px;
+}
+
 .science_cont4__name {
   padding-top: 45px;
   font-size: 1.8rem;
@@ -1994,11 +2060,17 @@ i, cite, em, var, address, dfn {
   border: 1px solid #a9a9a9;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+}
+
+.contact_map-area #map {
+  width: 100%;
+  height: 498px;
 }
 
 .contact {
   position: relative;
-  height: 490px;
+  height: 670px;
   width: 1258px;
   margin: 0 auto;
 }
@@ -2006,7 +2078,7 @@ i, cite, em, var, address, dfn {
 .contact__stit {
   position: absolute;
   left: 119px;
-  top: 129px;
+  top: 120px;
   font-family: "Open Sans", sans-serif !important;
   font-weight: 700;
   font-size: 2.3rem;
@@ -2031,26 +2103,154 @@ i, cite, em, var, address, dfn {
 
 .contact__info {
   position: absolute;
-  left: 435px;
-  top: 129px;
+  left: 448px;
+  top: 120px;
+  width: 315px;
 }
 
 .contact__info .contact__tit {
-  position: relative;
-  font-size: 3.6rem;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.contact__info .contact__txt {
-  margin-top: 60px;
-  font-size: 1.4rem;
-  color: #888;
+.contact__info .contact__addr {
+  font-size: 1.2rem;
+  color: #242424;
+  line-height: 1.4;
+  padding-top: 18px;
+}
+
+.contact__info .contact__email {
+  font-family: "Noto Sans", sans-serif !important;
+  font-size: 1.2rem;
+  color: #242424;
+  line-height: 1.4;
+  padding-top: 18px;
+}
+
+.contact__email .contact__email-label {
+  padding-right: 10px;
+}
+
+.contact__email .contact__email-link {
+  color: #242424;
+}
+
+.contact__info .contact__sns {
+  padding-top: 40px;
+  margin-left: -18px;
+}
+
+.contact__sns-facebook, .contact__sns-twitter, .contact__sns-youtube {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+  margin: 0 2px;
+  height: 18px;
+  text-align: center;
+}
+
+.contact__sns-facebook:before {
+  width: 9px;
+  height: 17px;
+  background-position: -575px -210px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.contact__sns-twitter:before {
+  width: 19px;
+  height: 15px;
+  background-position: -602px -190px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-top: 2px;
+}
+
+.contact__sns-youtube:before {
+  width: 23px;
+  height: 16px;
+  background-position: -575px -190px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.contact__form {
+  width: 350px;
+  position: absolute;
+  top: 100px;
+  left: 765px;
+  font-size: 1.2rem;
+}
+
+.contact__form .form-group {
+  margin: 10px 0;
+}
+
+.contact__form .control-label {
+  float: left;
+  width: 60px;
+  padding-left: 20px;
+  margin-top: 7px;
+}
+
+.contact__form .form-control {
+  float: left;
+  width: 250px;
+}
+
+.contact__form .contact__form-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f8f8f8;
+  border: 1px solid #d5dcdc;
+  padding: 10px 0;
+}
+
+.contact__form .contact__form-box:before, .contact__form .contact__form-box:after {
+  display: table;
+  content: "";
+}
+
+.contact__form .contact__form-box:after {
+  clear: both;
+}
+
+.contact__form .contact__text-box {
+  clear: both;
+  display: block;
+  padding: 0 10px;
+}
+
+.contact__text-box .form-control {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.contact .btn-primary {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   .header .logo__link {
     width: 137px;
     height: 24px;
-    background-position: -417px -354px;
+    background-position: -417px -377px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2062,7 +2262,7 @@ i, cite, em, var, address, dfn {
   .header .log_info .btn_study_apply:after {
     width: 7px;
     height: 8px;
-    background-position: -601px -148px;
+    background-position: -601px -166px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2074,7 +2274,7 @@ i, cite, em, var, address, dfn {
   .footer .foot_area .foot_copy:after {
     width: 117px;
     height: 20px;
-    background-position: -417px -380px;
+    background-position: -259px -458px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2098,7 +2298,7 @@ i, cite, em, var, address, dfn {
   .spot_area .spot1__info-logo {
     width: 228px;
     height: 39px;
-    background-position: -236px -417px;
+    background-position: -259px -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2134,7 +2334,7 @@ i, cite, em, var, address, dfn {
   .cont3__team1 .cont3__team1-area:after {
     width: 129px;
     height: 152px;
-    background-position: 0 -417px;
+    background-position: -417px -223px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2158,7 +2358,7 @@ i, cite, em, var, address, dfn {
   .cont4__area:after {
     width: 103px;
     height: 103px;
-    background-position: -131px -417px;
+    background-position: -154px -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2167,7 +2367,7 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
-  .science_spot .spot1__img {
+  .service_spot .spot2__img {
     width: 1258px;
     height: 498px;
     background-position: -1260px -966px;
@@ -2323,7 +2523,7 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
-  .science_spot .spot2__img {
+  .science_spot .spot3__img {
     width: 1258px;
     height: 500px;
     background-position: 0 -966px;
@@ -2338,7 +2538,7 @@ i, cite, em, var, address, dfn {
   .science_cont1:before {
     width: 152px;
     height: 129px;
-    background-position: -417px -223px;
+    background-position: 0 -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2371,5 +2571,40 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
+  .contact__sns-facebook:before {
+    width: 9px;
+    height: 17px;
+    background-position: -571px -202px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .contact__sns-twitter:before {
+    width: 19px;
+    height: 15px;
+    background-position: -601px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .contact__sns-youtube:before {
+    width: 23px;
+    height: 16px;
+    background-position: -571px -184px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
 }
-/*# sourceMappingURL=neurogazer.css.map */
