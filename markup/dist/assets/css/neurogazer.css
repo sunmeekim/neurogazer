@@ -411,6 +411,10 @@ i, cite, em, var, address, dfn {
   padding-bottom: 408px;
 }
 
+.wrap.other {
+  background: #f6f6f8;
+}
+
 .header {
   position: relative;
   width: 1304px;
@@ -482,10 +486,24 @@ i, cite, em, var, address, dfn {
   top: 24px;
 }
 
-.header .log_info .member_link {
-  color: #161616;
+.header .log_info .top_link {
+  color: #a9a9a9;
   font-weight: 700;
   line-height: 32px;
+}
+
+.header .log_info .top_link:hover {
+  color: #1a1a1a;
+}
+
+.header .log_info .top_link + .top_link:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 3px;
+  margin: 0 8px 0 5px;
+  background: #a9a9a9;
 }
 
 .header .log_info .btn_study_apply {
@@ -516,6 +534,12 @@ i, cite, em, var, address, dfn {
   margin-left: 8px;
 }
 
+.other .top_arae {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #a0a0a0;
+}
+
 .footer {
   position: absolute;
   left: 0;
@@ -529,6 +553,7 @@ i, cite, em, var, address, dfn {
   border-width: 1px 0;
   margin: 0 auto;
   text-align: center;
+  background: #fff;
 }
 
 .footer .menu__area {
