@@ -5,8 +5,12 @@
   min-height:$G-contents-fit;
   position: relative;
   padding-bottom: 408px;
-  &.other {
+  &.other,
+  &.login {
     background: $C-cont-bg;
+  }
+  &.login {
+    padding-bottom: 48px;
   }
 }
 .header {
@@ -60,11 +64,12 @@
     position: absolute;
     right: 30px;
     top: 24px;
+
     .top_link {
       color: $C-font-light2;
       font-weight: $F-weight-bold;
       line-height: 32px;
-
+      font-size: $F-size-under;
       &:hover {
         color: $C-font-dark-gray;
       }
@@ -103,13 +108,44 @@
   }
 }
 .other {
-  .top_arae {
+  .top_area {
     background: $C-white;
     width: $G-contents-fit;
     border-bottom: 1px solid $C-menu-line;
   }
-}
 
+}
+.login {
+  .top_area {
+    background: $C-white;
+    width: $G-contents-fit;
+    border-bottom: 1px solid $C-menu-line;
+  }
+  .footer {
+    background: #eef0f1;
+    .foot_copy {
+      text-align: center;
+      color: #555;
+      font-size: $F-size-small;
+      font-family: $F-family-en2;
+      padding: 20px 0 50px;
+      &:after {
+        display: none;
+      }
+      .foot_copy-text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3px;
+      }
+    }
+  }
+
+}
+.contents {
+  width : 990px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
 .footer {
   position: absolute;
   left: 0;

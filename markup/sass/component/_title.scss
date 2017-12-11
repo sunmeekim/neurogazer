@@ -1,4 +1,8 @@
 @charset "UTF-8";
 .title {
-
+  padding: 20px 0;
+  .heading_h1 {
+    font-size: 3.0rem;
+    font-weight: $F-weight-bold;
+  }
 }

@@ -411,8 +411,12 @@ i, cite, em, var, address, dfn {
   padding-bottom: 408px;
 }
 
-.wrap.other {
+.wrap.other, .wrap.login {
   background: #f6f6f8;
+}
+
+.wrap.login {
+  padding-bottom: 48px;
 }
 
 .header {
@@ -490,6 +494,7 @@ i, cite, em, var, address, dfn {
   color: #a9a9a9;
   font-weight: 700;
   line-height: 32px;
+  font-size: 1.3rem;
 }
 
 .header .log_info .top_link:hover {
@@ -524,7 +529,7 @@ i, cite, em, var, address, dfn {
 .header .log_info .btn_study_apply:after {
   width: 7px;
   height: 8px;
-  background-position: -607px -150px;
+  background-position: -613px -171px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -534,10 +539,44 @@ i, cite, em, var, address, dfn {
   margin-left: 8px;
 }
 
-.other .top_arae {
+.other .top_area {
   background: #fff;
   width: 100%;
   border-bottom: 1px solid #a0a0a0;
+}
+
+.login .top_area {
+  background: #fff;
+  width: 100%;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.login .footer {
+  background: #eef0f1;
+}
+
+.login .footer .foot_copy {
+  text-align: center;
+  color: #555;
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif !important;
+  padding: 20px 0 50px;
+}
+
+.login .footer .foot_copy:after {
+  display: none;
+}
+
+.login .footer .foot_copy .foot_copy-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.contents {
+  width: 990px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .footer {
@@ -733,6 +772,15 @@ i, cite, em, var, address, dfn {
   background: #3779de;
   border-color: #4444e6;
   color: #fff;
+}
+
+.title {
+  padding: 20px 0;
+}
+
+.title .heading_h1 {
+  font-size: 3.0rem;
+  font-weight: 700;
 }
 
 /* import */
@@ -1293,7 +1341,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -150px;
+  background-position: -575px -208px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1308,7 +1356,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -170px;
+  background-position: -575px -188px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1415,7 +1463,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -150px;
+  background-position: -575px -208px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1430,7 +1478,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -170px;
+  background-position: -575px -188px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1562,7 +1610,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -150px;
+  background-position: -575px -208px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1577,7 +1625,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -170px;
+  background-position: -575px -188px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1667,7 +1715,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -150px;
+  background-position: -575px -208px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1682,7 +1730,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -170px;
+  background-position: -575px -188px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2179,7 +2227,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-facebook:before {
   width: 9px;
   height: 17px;
-  background-position: -575px -210px;
+  background-position: -613px -150px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2191,7 +2239,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-twitter:before {
   width: 19px;
   height: 15px;
-  background-position: -602px -190px;
+  background-position: -602px -228px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2204,7 +2252,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-youtube:before {
   width: 23px;
   height: 16px;
-  background-position: -575px -190px;
+  background-position: -575px -228px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2271,11 +2319,161 @@ i, cite, em, var, address, dfn {
   font-family: "Open Sans", sans-serif !important;
 }
 
+.agree_box {
+  border-top: 2px solid #000;
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.01);
+          box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.01);
+  padding: 40px 60px;
+  background: #fff;
+}
+
+.agree_box .clause_wrap + .clause_wrap {
+  margin-top: 40px;
+}
+
+.agree_box .clause_wrap .clause__tit {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #242424;
+}
+
+.agree_box .clause_wrap .clause__explanation {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #888;
+  line-height: 1.8;
+}
+
+.agree_box .clause_wrap .clause__lst {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.login_wrap {
+  width: 460px;
+  margin: 120px auto 0;
+  text-align: center;
+}
+
+.login_wrap .login__title {
+  font-family: "Nanum Square", sans-serif !important;
+  font-size: 3.0rem;
+  color: #242424;
+}
+
+.login_wrap .login__title:before {
+  width: 34px;
+  height: 34px;
+  background-position: -575px -150px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  margin: -2px 10px 0 0;
+}
+
+.login_wrap .login__id, .login_wrap .login__pw, .login_wrap .login__btn {
+  margin-top: 10px;
+}
+
+.login_wrap .login__label {
+  display: block;
+}
+
+.login_wrap .login__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.login_wrap .login__submit {
+  width: 100%;
+  height: 53px;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.login_wrap .login__option {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e8e8;
+}
+
+.login_wrap .login__option:before, .login_wrap .login__option:after {
+  display: table;
+  content: "";
+}
+
+.login_wrap .login__option:after {
+  clear: both;
+}
+
+.login_wrap .login__id-save {
+  float: left;
+  position: relative;
+  padding-left: 25px;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.login_wrap .login__id-save:before {
+  width: 17px;
+  height: 17px;
+  background-position: -596px -248px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.login_wrap .login__id-save:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.login_wrap .login__find {
+  float: right;
+}
+
+.login_wrap .login__find-link {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.login__option input[type="checkbox"]:checked + .login__id-save:after {
+  width: 17px;
+  height: 17px;
+  background-position: -575px -248px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   .header .logo__link {
     width: 137px;
     height: 24px;
-    background-position: -417px -377px;
+    background-position: -417px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2287,7 +2485,7 @@ i, cite, em, var, address, dfn {
   .header .log_info .btn_study_apply:after {
     width: 7px;
     height: 8px;
-    background-position: -601px -166px;
+    background-position: -605px -216px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2299,7 +2497,7 @@ i, cite, em, var, address, dfn {
   .footer .foot_area .foot_copy:after {
     width: 117px;
     height: 20px;
-    background-position: -259px -458px;
+    background-position: -417px -380px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2323,7 +2521,7 @@ i, cite, em, var, address, dfn {
   .spot_area .spot1__info-logo {
     width: 228px;
     height: 39px;
-    background-position: -259px -417px;
+    background-position: -236px -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2359,7 +2557,7 @@ i, cite, em, var, address, dfn {
   .cont3__team1 .cont3__team1-area:after {
     width: 129px;
     height: 152px;
-    background-position: -417px -223px;
+    background-position: 0 -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2383,7 +2581,7 @@ i, cite, em, var, address, dfn {
   .cont4__area:after {
     width: 103px;
     height: 103px;
-    background-position: -154px -417px;
+    background-position: -131px -417px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2419,7 +2617,7 @@ i, cite, em, var, address, dfn {
   .service_cont1__info .service_cont1__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -148px;
+    background-position: -571px -282px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2431,7 +2629,7 @@ i, cite, em, var, address, dfn {
   .service_cont1__info .service_cont1__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -166px;
+    background-position: -571px -264px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2467,7 +2665,7 @@ i, cite, em, var, address, dfn {
   .service_cont3__info .service_cont3__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -148px;
+    background-position: -571px -282px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2479,7 +2677,7 @@ i, cite, em, var, address, dfn {
   .service_cont3__info .service_cont3__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -166px;
+    background-position: -571px -264px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2491,7 +2689,7 @@ i, cite, em, var, address, dfn {
   .service_cont4__info .service_cont4__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -148px;
+    background-position: -571px -282px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2503,7 +2701,7 @@ i, cite, em, var, address, dfn {
   .service_cont4__info .service_cont4__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -166px;
+    background-position: -571px -264px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2527,7 +2725,7 @@ i, cite, em, var, address, dfn {
   .service_cont5__info .service_cont5__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -148px;
+    background-position: -571px -282px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2539,7 +2737,7 @@ i, cite, em, var, address, dfn {
   .service_cont5__info .service_cont5__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -166px;
+    background-position: -571px -264px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2563,7 +2761,7 @@ i, cite, em, var, address, dfn {
   .science_cont1:before {
     width: 152px;
     height: 129px;
-    background-position: 0 -417px;
+    background-position: -417px -223px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2599,7 +2797,7 @@ i, cite, em, var, address, dfn {
   .contact__sns-facebook:before {
     width: 9px;
     height: 17px;
-    background-position: -571px -202px;
+    background-position: -605px -197px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2611,7 +2809,7 @@ i, cite, em, var, address, dfn {
   .contact__sns-twitter:before {
     width: 19px;
     height: 15px;
-    background-position: -601px -148px;
+    background-position: -601px -264px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2623,7 +2821,43 @@ i, cite, em, var, address, dfn {
   .contact__sns-youtube:before {
     width: 23px;
     height: 16px;
-    background-position: -571px -184px;
+    background-position: -571px -300px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .login_wrap .login__title:before {
+    width: 48px;
+    height: 48px;
+    background-position: -571px -148px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .login_wrap .login__id-save:before {
+    width: 32px;
+    height: 32px;
+    background-position: -571px -231px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .login__option input[type="checkbox"]:checked + .login__id-save:after {
+    width: 32px;
+    height: 32px;
+    background-position: -571px -197px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2633,3 +2867,4 @@ i, cite, em, var, address, dfn {
     content: '';
   }
 }
+/*# sourceMappingURL=neurogazer.css.map */
