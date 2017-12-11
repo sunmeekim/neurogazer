@@ -78,6 +78,12 @@
       font-size: $F-size-small;
     }
 
+    &__other {
+      padding: 20px 0;
+      @include clear;
+      border-bottom: 1px solid #e7e8e8;
+    }
+
   }
 }
 .login__option input[type="checkbox"]:checked + .login__id-save:after {

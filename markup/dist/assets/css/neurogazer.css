@@ -2457,6 +2457,20 @@ i, cite, em, var, address, dfn {
   font-size: 1.2rem;
 }
 
+.login_wrap .login__other {
+  padding: 20px 0;
+  border-bottom: 1px solid #e7e8e8;
+}
+
+.login_wrap .login__other:before, .login_wrap .login__other:after {
+  display: table;
+  content: "";
+}
+
+.login_wrap .login__other:after {
+  clear: both;
+}
+
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   width: 17px;
   height: 17px;
