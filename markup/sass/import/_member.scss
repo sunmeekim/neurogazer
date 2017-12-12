@@ -100,6 +100,7 @@
     &__other-link {
       float: right;
     }
+
   }
   .login__find-link + .login__find-link {
     &:before {
@@ -136,7 +137,7 @@ label.error {
           padding:0;
           font-size: 1.8rem;
         }
-        .btn-primary {
+        .btn-cancel+.btn-primary {
           margin-left: 7px;
         }
       }
@@ -269,6 +270,22 @@ label.error {
     &__result-labeltxt {
       margin-top: -5px;
     }
+    &__ok {
+      padding: 75px 0 120px;
+      text-align: center;
+    }
+    &__ok-message {
+      font-size: $F-size-big;
+      color: $C-font-dark;
+      font-weight: $F-weight-bold;
+      span {
+        color: $C-brand-point;
+      }
+      &:before {
+        @include use-sprite(ico_ok);
+        margin-bottom: 15px;
+      }
+    }
     &__label {
       display: block;
       padding: 20px 0;
@@ -316,7 +333,22 @@ label.error {
   label.error {
     font-size: $F-size-small;
   }
-
+  .find__form-box {
+    &.end {
+      .find__form-group {
+        display: none;
+      }
+    }
+    &.reset {
+      .find__label {
+        color: $C-font-dark;
+        font-size: $F-size-under;
+      }
+      .find__id-desc {
+        padding-left: 0;
+      }
+    }
+  }
 }
 .find__select_box input[type="radio"]:checked + .find__input-phone:after,
 .find__result-email input[type="radio"]:checked + .find__input-phone:after {
