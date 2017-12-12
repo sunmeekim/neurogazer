@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- start: HEAD -->
+<head>
+    <title>NEUROGAZER(home) : 비밀번호찾기_이메일</title>
+    <!-- start: META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- end: META -->
+    <link rel="stylesheet" href="../../assets/css/neurogazer.css"/>
+
+</head>
+<!-- end: HEAD -->
+<body>
+<div class="wrap login">
+    <!-- header_area -->
+    <div class="top_area">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#" class="logo__link">
+                <span class="g_invisible">neurogazer</span>
+            </a>
+        </h1>
+        <div class="menu">
+            <ul class="menu__area">
+                <!-- 해당메뉴에서는 active 클래스를 추가해 줍니다 -->
+                <li class="menu__item active"><a href="../home/01_about.html" class="menu__link">ABOUT US</a></li>
+                <li class="menu__item"><a href="../home/02_service.html" class="menu__link">SERVICE</a></li>
+                <li class="menu__item"><a href="../home/03_science.html" class="menu__link">SCIENCE</a></li>
+                <li class="menu__item"><a href="../home/04_contactus.html" class="menu__link">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="log_info">
+            <a href="#" class="top_link">1:1 문의</a>
+            <a href="#" class="top_link">진행현황</a>
+            <a href="#" class="top_link">연구안내</a>
+            <a href="#" class="top_link">로그아웃</a>
+            <a href="#" class="btn_study_apply">연구참여</a>
+        </div>
+    </div>
+</div>
+
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <div class="find_wrap">
+                <div class="tab">
+                    <ul class="tab__list two_end">
+                        <li class="tab__item"><a href="#" class="tab__link">이메일(아이디) 찾기</a></li>
+                        <li class="tab__item active"><a href="#" class="tab__link">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+
+                <div class="find__form">
+                    <div class="find__pw-wrap">
+                        <div class="find__select_box">
+                            <input type="radio" class="g_invisible" id="find-pw-phone" checked/>
+                            <label class="find__input-phone" for="find-pw-phone">휴대전화로 찾기</label>
+                        </div>
+                        <p class="find__id-desc">가입 당시 입력한 휴대전화 번호를 통해 이메일(아이디)를 문자와 함께 확인하세요. </p>
+                    </div>
+                    <div class="find__form-box">
+                        <div class="find__form-group">
+                            <label class="find__label">이름</label>
+                            <input type="text" class="find__input"/>
+                        </div>
+                        <div class="find__form-group">
+                            <label class="find__label">휴대번호 <span class="required">(필수)</span></label>
+                            <div class="find__form-sgroup">
+                                <span class="find__form-inline select">
+                                    <select  class="find__select" style="width:108px;">
+                                        <option>KT</option>
+                                    </select>
+                                </span>
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 340px"/></span>
+                                <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
+                            </div>
+                        </div>
+                        <div class="find__form-group mt10">
+                            <label class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
+                                <span class="find__form-inline posi_r">
+                                    <span class="find__form-timer">02:00</span>
+                                </span>
+                                <span class="find__form-inline"><a href="#확인"  class="btn btn-primary disabled">확인</a> </span>
+                            </label>
+                            <label class="error">입력된 회원정보가 존재하지 않습니다. 비회원일 경우 계정등록 후 이용해주세요.</label>
+                        </div>
+                    </div>
+                    <div class="find__pw-wrap">
+                        <div class="find__select_box">
+                            <input type="radio" class="g_invisible" id="find-pw-email"/>
+                            <label class="find__input-phone" for="find-pw-email">이메일로 찾기</label>
+                        </div>
+                        <p class="find__id-desc">가입 당시 입력한 이메일 주소를 통해 아이디를 찾을 수 있습니다</p>
+                    </div>
+                    <div class="find__form-box"  style="display: none">
+                        <div class="find__form-group">
+                            <label class="find__label">이름</label>
+                            <input type="text" class="find__input"/>
+                        </div>
+                        <div class="find__form-group">
+                            <label class="find__label">이메일</label>
+                            <div class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder=""/></span>
+                                <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
+                            </div>
+                        </div>
+                        <div class="find__form-group mt10">
+                            <label class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
+                                <!--<span class="find__form-inline posi_r">-->
+                                    <!--<span class="find__form-timer">02:00</span>-->
+                                <!--</span>-->
+                                <span class="find__form-inline"><a href="#확인"  class="btn btn-primary disabled">확인</a> </span>
+                            </label>
+                            <label class="error">인증번호를 입력하세요.</label>
+                        </div>
+                    </div>
+                    <div class="btn_wrap al_c">
+                        <input class="btn btn-cancel" type="button" value="취소">
+                        <input class="btn btn-primary" type="submit" value="확인">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    <div class="footer">
+    <div class="foot_copy">
+        <span class="foot_copy-text">Copyright © NEUROGAZER Inc. 2017. All right reserved</span>
+    </div>
+</div>
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

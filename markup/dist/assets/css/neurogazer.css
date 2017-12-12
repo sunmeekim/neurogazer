@@ -148,6 +148,9 @@ button:-moz-focusring,
 select {
   /* 1 */
   text-transform: none;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
 }
 
 article,
@@ -380,6 +383,14 @@ i, cite, em, var, address, dfn {
   content: "\f110";
 }
 
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.al_c {
+  text-align: center !important;
+}
+
 @-webkit-keyframes loading {
   0% {
     -webkit-transform: rotate(0);
@@ -435,7 +446,7 @@ i, cite, em, var, address, dfn {
 .header .logo__link {
   width: 137px;
   height: 24px;
-  background-position: -419px -381px;
+  background-position: -419px -358px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -509,34 +520,6 @@ i, cite, em, var, address, dfn {
   height: 3px;
   margin: 0 8px 0 5px;
   background: #a9a9a9;
-}
-
-.header .log_info .btn_study_apply {
-  display: inline-block;
-  vertical-align: top;
-  width: 88px;
-  height: 34px;
-  margin-left: 20px;
-  border: 1px solid #0068b7;
-  border-radius: 3px;
-  line-height: 32px;
-  text-align: center;
-  color: #fff;
-  font-size: 1.4rem;
-  background: #3779de;
-}
-
-.header .log_info .btn_study_apply:after {
-  width: 7px;
-  height: 8px;
-  background-position: -613px -171px;
-  overflow: hidden;
-  display: inline-block;
-  text-indent: -999px;
-  background-image: url("../images/spr_img/spr_img.png");
-  background-repeat: no-repeat;
-  content: '';
-  margin-left: 8px;
 }
 
 .other .top_area {
@@ -713,7 +696,7 @@ i, cite, em, var, address, dfn {
 .footer .foot_area .foot_copy:after {
   width: 117px;
   height: 20px;
-  background-position: -263px -462px;
+  background-position: -419px -386px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -763,7 +746,7 @@ i, cite, em, var, address, dfn {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  border-right: 3px;
+  border-radius: 3px;
   border: 1px solid transparent;
   outline: 0;
 }
@@ -774,12 +757,139 @@ i, cite, em, var, address, dfn {
   color: #fff;
 }
 
+.btn.disabled {
+  background: #f6f6f8;
+  border-color: #e0e4eb;
+  color: #a7a7a7;
+}
+
+.btn.btn-cancel {
+  background: #fff;
+  border-color: #d8d8d8;
+  color: #242424;
+}
+
+.btn_study_apply {
+  display: inline-block;
+  vertical-align: top;
+  width: 88px;
+  height: 34px;
+  margin-left: 20px;
+  border: 1px solid #0068b7;
+  border-radius: 3px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  background: #3779de;
+}
+
+.btn_study_apply:after {
+  width: 7px;
+  height: 8px;
+  background-position: -613px -171px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-left: 8px;
+}
+
+.btn_study_apply.small {
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn_send {
+  display: inline-block;
+  vertical-align: top;
+  width: 124px;
+  height: 24px;
+  margin-left: 20px;
+  border: 1px solid #d1d7e1;
+  border-radius: 1px;
+  line-height: 22px;
+  text-align: center;
+  color: #f1504a;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+.btn_send:after {
+  width: 4px;
+  height: 7px;
+  background-position: -607px -215px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-left: 3px;
+}
+
+.btn_wrap {
+  padding: 45px 0;
+}
+
+.btn_wrap:before, .btn_wrap:after {
+  display: table;
+  content: "";
+}
+
+.btn_wrap:after {
+  clear: both;
+}
+
 .title {
   padding: 20px 0;
 }
 
 .title .heading_h1 {
   font-size: 3.0rem;
+  font-weight: 700;
+}
+
+.title .heading_h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #242424;
+}
+
+.tab__list:before, .tab__list:after {
+  display: table;
+  content: "";
+}
+
+.tab__list:after {
+  clear: both;
+}
+
+.tab__list.two_end .tab__item {
+  width: 50%;
+}
+
+.tab__list .tab__item {
+  float: left;
+  text-align: center;
+}
+
+.tab__list .tab__item.active .tab__link {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.tab__list .tab__link {
+  color: #888;
+  font-size: 1.8rem;
+  display: block;
+  height: 52px;
+  background: #fff;
+  line-height: 52px;
   font-weight: 700;
 }
 
@@ -812,7 +922,7 @@ i, cite, em, var, address, dfn {
 .spot_area .spot1__info-logo {
   width: 228px;
   height: 39px;
-  background-position: -263px -419px;
+  background-position: -240px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -943,7 +1053,7 @@ i, cite, em, var, address, dfn {
 .cont3__team1 .cont3__team1-area:after {
   width: 129px;
   height: 152px;
-  background-position: -419px -225px;
+  background-position: 0 -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1136,7 +1246,7 @@ i, cite, em, var, address, dfn {
   top: -125px;
   width: 103px;
   height: 103px;
-  background-position: -156px -419px;
+  background-position: -133px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1341,7 +1451,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -208px;
+  background-position: -575px -235px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1356,7 +1466,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -188px;
+  background-position: -575px -215px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1463,7 +1573,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -208px;
+  background-position: -575px -235px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1478,7 +1588,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -188px;
+  background-position: -575px -215px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1610,7 +1720,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -208px;
+  background-position: -575px -235px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1625,7 +1735,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -188px;
+  background-position: -575px -215px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1715,7 +1825,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -575px -208px;
+  background-position: -575px -235px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1730,7 +1840,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -575px -188px;
+  background-position: -575px -215px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1797,7 +1907,7 @@ i, cite, em, var, address, dfn {
 .science_cont1:before {
   width: 152px;
   height: 129px;
-  background-position: 0 -419px;
+  background-position: -419px -225px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2239,7 +2349,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-twitter:before {
   width: 19px;
   height: 15px;
-  background-position: -602px -228px;
+  background-position: -602px -255px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2252,7 +2362,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-youtube:before {
   width: 23px;
   height: 16px;
-  background-position: -575px -228px;
+  background-position: -575px -255px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2393,6 +2503,16 @@ i, cite, em, var, address, dfn {
   text-indent: 15px;
 }
 
+.login_wrap .login__input:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.login_wrap .login__input.error {
+  border: 1px solid #ff0000;
+}
+
 .login_wrap .login__submit {
   width: 100%;
   height: 53px;
@@ -2429,7 +2549,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__id-save:before {
   width: 17px;
   height: 17px;
-  background-position: -596px -248px;
+  background-position: -596px -275px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2438,13 +2558,13 @@ i, cite, em, var, address, dfn {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2px;
 }
 
 .login_wrap .login__id-save:after {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2px;
   z-index: 10;
 }
 
@@ -2458,7 +2578,7 @@ i, cite, em, var, address, dfn {
 }
 
 .login_wrap .login__other {
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #e7e8e8;
 }
 
@@ -2471,16 +2591,327 @@ i, cite, em, var, address, dfn {
   clear: both;
 }
 
+.login_wrap .login__other-txt {
+  float: left;
+  color: #888;
+  font-size: 1.3rem;
+  margin-top: 7px;
+}
+
+.login_wrap .login__other-link {
+  float: right;
+}
+
+.login_wrap .login__find-link + .login__find-link:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 12px;
+  background: #e4e4e5;
+  content: '';
+  margin: 0 5px 0 2px;
+}
+
+label.error {
+  color: #ff0000;
+  display: block;
+  text-align: left;
+  padding: 5px 0;
+}
+
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   width: 17px;
   height: 17px;
-  background-position: -575px -248px;
+  background-position: -575px -275px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
   background-image: url("../images/spr_img/spr_img.png");
   background-repeat: no-repeat;
   content: '';
+}
+
+.find_wrap {
+  width: 570px;
+  margin: 20px auto 0;
+}
+
+.find_wrap .find__form {
+  margin: 65px 0 0;
+}
+
+.find_wrap .find__form .btn_wrap .btn {
+  width: 104px;
+  height: 52px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.find_wrap .find__form .btn_wrap .btn-primary {
+  margin-left: 7px;
+}
+
+.find_wrap .find__id-wrap {
+  padding-bottom: 25px;
+}
+
+.find_wrap .find__id-wrap:before, .find_wrap .find__id-wrap:after {
+  display: table;
+  content: "";
+}
+
+.find_wrap .find__id-wrap:after {
+  clear: both;
+}
+
+.find_wrap .find__select_box {
+  position: relative;
+  padding-left: 30px;
+}
+
+.find_wrap .find__input-phone {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.find_wrap .find__input-phone:before {
+  width: 23px;
+  height: 23px;
+  background-position: -575px -188px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.find_wrap .find__input-phone:after {
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.find_wrap .find__id-desc {
+  padding: 5px 0 0 30px;
+  display: block;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.find_wrap .find__pw-wrap {
+  height: 95px;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: -1px;
+}
+
+.find_wrap .find__pw-wrap:before, .find_wrap .find__pw-wrap:after {
+  display: table;
+  content: "";
+}
+
+.find_wrap .find__pw-wrap:after {
+  clear: both;
+}
+
+.find_wrap .find__pw-wrap:first-child {
+  margin-top: -30px;
+}
+
+.find_wrap .find__pw-wrap .find__select_box {
+  margin-top: 30px;
+}
+
+.find_wrap .find__form-box {
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.find_wrap .find__form-group:before, .find_wrap .find__form-group:after {
+  display: table;
+  content: "";
+}
+
+.find_wrap .find__form-group:after {
+  clear: both;
+}
+
+.find_wrap .find__form-group:last-child {
+  margin-bottom: 40px;
+}
+
+.find_wrap .find__form-sgroup:before, .find_wrap .find__form-sgroup:after {
+  display: table;
+  content: "";
+}
+
+.find_wrap .find__form-sgroup:after {
+  clear: both;
+}
+
+.find_wrap .find__form-inline {
+  float: left;
+}
+
+.find_wrap .find__form-inline + .find__form-inline {
+  margin-left: 8px;
+}
+
+.find_wrap .find__form-inline .btn-primary {
+  height: 46px;
+  padding: 0;
+  width: 98px;
+  text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.find_wrap .find__form-inline.select {
+  position: relative;
+}
+
+.find_wrap .find__form-inline.select:after {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 2;
+  width: 7px;
+  height: 4px;
+  background-position: -615px -215px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.find_wrap .find__form-inline.posi_r {
+  position: relative;
+}
+
+.find_wrap .find__form-timer {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10;
+  color: #f1504a;
+}
+
+.find_wrap .find__end {
+  padding: 35px 0;
+}
+
+.find_wrap .find__result {
+  background: #fff;
+  height: 80px;
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+
+.find_wrap .find__result-wrap:before, .find_wrap .find__result-wrap:after {
+  display: table;
+  content: "";
+}
+
+.find_wrap .find__result-wrap:after {
+  clear: both;
+}
+
+.find_wrap .find__result-wrap .find__id-desc {
+  padding: 0;
+}
+
+.find_wrap .find__result-email {
+  float: left;
+  position: relative;
+  margin: 30px 0 0 30px;
+  padding-left: 30px;
+}
+
+.find_wrap .find__result-send {
+  float: right;
+  margin: 28px 30px 0 0;
+}
+
+.find_wrap .find__result-labeltxt {
+  margin-top: -5px;
+}
+
+.find_wrap .find__label {
+  display: block;
+  padding: 20px 0;
+  color: #888;
+}
+
+.find_wrap .find__label .required {
+  color: #3779de;
+}
+
+.find_wrap .find__input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.find_wrap .find__input:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.find_wrap .find__input.error {
+  border: 1px solid #ff0000;
+}
+
+.find_wrap .find__select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.find_wrap .find__select:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.find_wrap .find__select.error {
+  border: 1px solid #ff0000;
+}
+
+.find_wrap label.error {
+  font-size: 1.2rem;
+}
+
+.find__select_box input[type="radio"]:checked + .find__input-phone:after,
+.find__result-email input[type="radio"]:checked + .find__input-phone:after {
+  width: 23px;
+  height: 23px;
+  background-position: -602px -188px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.find__select_box input[type="radio"]:checked + .find__input-phone,
+.find__result-email input[type="radio"]:checked + .find__input-phone {
+  color: #242424;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
@@ -2496,10 +2927,10 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
-  .header .log_info .btn_study_apply:after {
-    width: 7px;
-    height: 8px;
-    background-position: -605px -216px;
+  .footer .foot_area .foot_copy:after {
+    width: 117px;
+    height: 20px;
+    background-position: -417px -380px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2508,10 +2939,22 @@ i, cite, em, var, address, dfn {
     background-repeat: no-repeat;
     content: '';
   }
-  .footer .foot_area .foot_copy:after {
-    width: 117px;
-    height: 20px;
-    background-position: -417px -380px;
+  .btn_study_apply:after {
+    width: 7px;
+    height: 8px;
+    background-position: -605px -321px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .btn_send:after {
+    width: 4px;
+    height: 7px;
+    background-position: -616px -197px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2631,7 +3074,7 @@ i, cite, em, var, address, dfn {
   .service_cont1__info .service_cont1__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -282px;
+    background-position: -571px -372px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2643,7 +3086,7 @@ i, cite, em, var, address, dfn {
   .service_cont1__info .service_cont1__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -264px;
+    background-position: -571px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2679,7 +3122,7 @@ i, cite, em, var, address, dfn {
   .service_cont3__info .service_cont3__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -282px;
+    background-position: -571px -372px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2691,7 +3134,7 @@ i, cite, em, var, address, dfn {
   .service_cont3__info .service_cont3__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -264px;
+    background-position: -571px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2703,7 +3146,7 @@ i, cite, em, var, address, dfn {
   .service_cont4__info .service_cont4__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -282px;
+    background-position: -571px -372px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2715,7 +3158,7 @@ i, cite, em, var, address, dfn {
   .service_cont4__info .service_cont4__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -264px;
+    background-position: -571px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2739,7 +3182,7 @@ i, cite, em, var, address, dfn {
   .service_cont5__info .service_cont5__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -571px -282px;
+    background-position: -571px -372px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2751,7 +3194,7 @@ i, cite, em, var, address, dfn {
   .service_cont5__info .service_cont5__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -571px -264px;
+    background-position: -571px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2811,7 +3254,7 @@ i, cite, em, var, address, dfn {
   .contact__sns-facebook:before {
     width: 9px;
     height: 17px;
-    background-position: -605px -197px;
+    background-position: -605px -287px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2823,7 +3266,7 @@ i, cite, em, var, address, dfn {
   .contact__sns-twitter:before {
     width: 19px;
     height: 15px;
-    background-position: -601px -264px;
+    background-position: -601px -354px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2835,7 +3278,7 @@ i, cite, em, var, address, dfn {
   .contact__sns-youtube:before {
     width: 23px;
     height: 16px;
-    background-position: -571px -300px;
+    background-position: -571px -390px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2859,7 +3302,7 @@ i, cite, em, var, address, dfn {
   .login_wrap .login__id-save:before {
     width: 32px;
     height: 32px;
-    background-position: -571px -231px;
+    background-position: -571px -321px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;
@@ -2871,7 +3314,44 @@ i, cite, em, var, address, dfn {
   .login__option input[type="checkbox"]:checked + .login__id-save:after {
     width: 32px;
     height: 32px;
+    background-position: -571px -287px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .find_wrap .find__input-phone:before {
+    width: 43px;
+    height: 43px;
     background-position: -571px -197px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .find_wrap .find__form-inline.select:after {
+    width: 14px;
+    height: 8px;
+    background-position: -605px -306px;
+    background-size: 621px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .find__select_box input[type="radio"]:checked + .find__input-phone:after,
+  .find__result-email input[type="radio"]:checked + .find__input-phone:after {
+    width: 43px;
+    height: 43px;
+    background-position: -571px -242px;
     background-size: 621px auto;
     overflow: hidden;
     display: inline-block;

@@ -6,7 +6,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  border-right:3px;
+  border-radius:3px;
   border: 1px solid transparent;
   outline: 0;
 
@@ -15,4 +15,65 @@
     border-color: #4444e6;
     color: $C-white;
   }
+  &.disabled {
+    background: #f6f6f8;
+    border-color: #e0e4eb;
+    color: #a7a7a7;
+  }
+  &.btn-cancel {
+    background: $C-white;
+    border-color: #d8d8d8;
+    color: $C-font-dark;
+  }
+}
+
+.btn_study_apply {
+  display: inline-block;
+  vertical-align: top;
+  width: 88px;
+  height:34px;
+  margin-left: 20px;
+  border: 1px solid $C-brand-point2;
+  border-radius: 3px;
+  line-height:32px;
+  text-align: center;
+  color: $C-white;
+  font-size: $F-size;
+  background: $C-brand-point;
+
+  &:after {
+    @include use-sprite(arrow_right);
+    margin-left: 8px;
+  }
+  &.small {
+    height: 30px;
+    line-height: 30px;
+    font-size:$F-size-small;
+    font-weight: $F-weight-bold;
+  }
+}
+
+.btn_send {
+  display: inline-block;
+  vertical-align: top;
+  width: 124px;
+  height:24px;
+  margin-left: 20px;
+  border: 1px solid #d1d7e1;
+  border-radius: 1px;
+  line-height:22px;
+  text-align: center;
+  color: $C-red-point;
+  font-size: $F-size-small;
+  background: $C-white;
+
+  &:after {
+    @include use-sprite(ico_arrowright);
+    margin-left: 3px;
+  }
+}
+
+.btn_wrap {
+  padding: 45px 0;
+  @include clear();
 }

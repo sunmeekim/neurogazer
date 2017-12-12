@@ -1,0 +1,103 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 비밀번호찾기_이메일","filePath": "../"})
+<body>
+<div class="wrap login">
+    <!-- header_area -->
+    @@include('top.html')
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <div class="find_wrap">
+                <div class="tab">
+                    <ul class="tab__list two_end">
+                        <li class="tab__item"><a href="#" class="tab__link">이메일(아이디) 찾기</a></li>
+                        <li class="tab__item active"><a href="#" class="tab__link">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+
+                <div class="find__form">
+                    <div class="find__pw-wrap">
+                        <div class="find__select_box">
+                            <input type="radio" class="g_invisible" id="find-pw-phone" checked/>
+                            <label class="find__input-phone" for="find-pw-phone">휴대전화로 찾기</label>
+                        </div>
+                        <p class="find__id-desc">가입 당시 입력한 휴대전화 번호를 통해 이메일(아이디)를 문자와 함께 확인하세요. </p>
+                    </div>
+                    <div class="find__form-box">
+                        <div class="find__form-group">
+                            <label class="find__label">이름</label>
+                            <input type="text" class="find__input"/>
+                        </div>
+                        <div class="find__form-group">
+                            <label class="find__label">휴대번호 <span class="required">(필수)</span></label>
+                            <div class="find__form-sgroup">
+                                <span class="find__form-inline select">
+                                    <select  class="find__select" style="width:108px;">
+                                        <option>KT</option>
+                                    </select>
+                                </span>
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 340px"/></span>
+                                <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
+                            </div>
+                        </div>
+                        <div class="find__form-group mt10">
+                            <label class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
+                                <span class="find__form-inline posi_r">
+                                    <span class="find__form-timer">02:00</span>
+                                </span>
+                                <span class="find__form-inline"><a href="#확인"  class="btn btn-primary disabled">확인</a> </span>
+                            </label>
+                            <label class="error">입력된 회원정보가 존재하지 않습니다. 비회원일 경우 계정등록 후 이용해주세요.</label>
+                        </div>
+                    </div>
+                    <div class="find__pw-wrap">
+                        <div class="find__select_box">
+                            <input type="radio" class="g_invisible" id="find-pw-email"/>
+                            <label class="find__input-phone" for="find-pw-email">이메일로 찾기</label>
+                        </div>
+                        <p class="find__id-desc">가입 당시 입력한 이메일 주소를 통해 아이디를 찾을 수 있습니다</p>
+                    </div>
+                    <div class="find__form-box"  style="display: none">
+                        <div class="find__form-group">
+                            <label class="find__label">이름</label>
+                            <input type="text" class="find__input"/>
+                        </div>
+                        <div class="find__form-group">
+                            <label class="find__label">이메일</label>
+                            <div class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder=""/></span>
+                                <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
+                            </div>
+                        </div>
+                        <div class="find__form-group mt10">
+                            <label class="find__form-sgroup">
+                                <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
+                                <!--<span class="find__form-inline posi_r">-->
+                                    <!--<span class="find__form-timer">02:00</span>-->
+                                <!--</span>-->
+                                <span class="find__form-inline"><a href="#확인"  class="btn btn-primary disabled">확인</a> </span>
+                            </label>
+                            <label class="error">인증번호를 입력하세요.</label>
+                        </div>
+                    </div>
+                    <div class="btn_wrap al_c">
+                        <input class="btn btn-cancel" type="button" value="취소">
+                        <input class="btn btn-primary" type="submit" value="확인">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('simple_footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

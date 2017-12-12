@@ -107,6 +107,8 @@ button:-moz-focusring,
 
 select { /* 1 */
 	text-transform: none;
+	appearance: none;
+	-webkit-appearance: none;
 }
 
 article,
@@ -312,6 +314,13 @@ i, cite, em, var, address, dfn {
 		content:"\f110"
 	}
 
+}
+.mt10 {
+	margin-top: 10px !important;
+}
+
+.al_c {
+	text-align: center !important;
 }
 @-webkit-keyframes loading{
 	0%{

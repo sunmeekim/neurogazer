@@ -32,6 +32,14 @@
       border-radius: 3px;
       background:#fff;
       text-indent: 15px;
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+      &.error {
+        border: 1px solid $C-error;
+      }
     }
     &__submit {
       width: 100%;
@@ -60,12 +68,12 @@
         @include use-sprite(input_check);
         position: absolute;
         left: 0;
-        top: 0;
+        top: -2px;
       }
       &:after {
         position: absolute;
         left: 0;
-        top: 0;
+        top: -2px;
         z-index: 10;
       }
     }
@@ -79,13 +87,244 @@
     }
 
     &__other {
-      padding: 20px 0;
+      padding: 15px 0;
       @include clear;
       border-bottom: 1px solid #e7e8e8;
     }
-
+    &__other-txt {
+      float: left;
+      color: $C-font-basic;
+      font-size: $F-size-under;
+      margin-top: 7px;
+    }
+    &__other-link {
+      float: right;
+    }
   }
+  .login__find-link + .login__find-link {
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      width: 1px;
+      height: 12px;
+      background: #e4e4e5;
+      content: '';
+      margin: 0 5px 0 2px;
+    }
+  }
+
+}
+label.error {
+  color: $C-error;
+  display: block;
+  text-align: left;
+  padding: 5px 0;
 }
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   @include use-sprite(input_check_on);
+}
+.find_wrap {
+  width: 570px;
+  margin: 20px auto 0;
+  .find{
+    &__form {
+      margin:65px 0 0;
+      .btn_wrap {
+        .btn {
+          width:104px;
+          height: 52px;
+          padding:0;
+          font-size: 1.8rem;
+        }
+        .btn-primary {
+          margin-left: 7px;
+        }
+      }
+
+    }
+    &__id-wrap {
+      padding-bottom: 25px;
+      @include clear();
+
+    }
+    &__select_box {
+      position: relative;
+      padding-left: 30px;
+    }
+    &__input-phone {
+      font-size: $F-size-big;
+      color: $C-font-basic;
+
+      &:before {
+        @include use-sprite(input_radio);
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+      &:after {
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+    }
+    &__id-desc {
+      padding: 5px 0 0 30px;
+      display: block;
+      font-size: $F-size-small;
+      color: $C-font-basic;
+    }
+    &__pw-wrap {
+      height: 95px;
+      @include clear();
+      padding:0;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: -1px;
+      &:first-child {
+        margin-top: -30px;
+      }
+      .find__select_box {
+        margin-top: 30px;
+      }
+
+    }
+    &__form-box {
+      border-top: 2px solid #333;
+      border-bottom: 1px solid #ccc;
+    }
+    &__form-group {
+      @include clear();
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+    &__form-sgroup {
+      @include clear();
+    }
+    &__form-inline {
+      float:left;
+
+
+      +.find__form-inline {
+        margin-left: 8px;
+      }
+      .btn-primary {
+        height:46px;
+        padding: 0;
+        width: 98px;
+        text-align: center;
+        line-height: 44px;
+        font-weight: $F-weight-bold;
+      }
+      &.select {
+        position: relative;
+        &:after {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          z-index: 2;
+          @include use-sprite(ico_arrowdown);
+
+        }
+      }
+      &.posi_r {
+        position: relative;
+      }
+    }
+    &__form-timer {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      z-index: 10;
+      color: $C-red-point;
+    }
+    &__end {
+      padding: 35px 0;
+    }
+    &__result {
+      background: $C-white;
+      height: 80px;
+      margin-bottom: 120px;
+      overflow: hidden;
+    }
+    &__result-wrap {
+
+      @include clear();
+      .find__id-desc {
+        padding: 0;
+      }
+    }
+    &__result-email {
+      float: left;
+      position: relative;
+      margin: 30px 0 0 30px;
+      padding-left: 30px;
+
+    }
+    &__result-send {
+      float: right;
+      margin: 28px 30px 0 0;
+    }
+    &__result-labeltxt {
+      margin-top: -5px;
+    }
+    &__label {
+      display: block;
+      padding: 20px 0;
+      color: $C-font-basic;
+      .required {
+        color: $C-brand-point;
+      }
+    }
+    &__input {
+      width: 100%;
+      height: 46px;
+      border: 1px solid #d1d7e1;
+      border-radius: 3px;
+      background:#fff;
+      text-indent: 15px;
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+      &.error {
+        border: 1px solid $C-error;
+      }
+    }
+    &__select {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #d1d7e1;
+      border-radius: 3px;
+      background:#fff;
+      text-indent: 15px;
+
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+
+      &.error {
+        border: 1px solid $C-error;
+      }
+
+    }
+  }
+  label.error {
+    font-size: $F-size-small;
+  }
+
+}
+.find__select_box input[type="radio"]:checked + .find__input-phone:after,
+.find__result-email input[type="radio"]:checked + .find__input-phone:after {
+  @include use-sprite(input_radio_on);
+
+}
+.find__select_box input[type="radio"]:checked + .find__input-phone,
+.find__result-email input[type="radio"]:checked + .find__input-phone {
+  color: $C-font-dark;
+
 }
