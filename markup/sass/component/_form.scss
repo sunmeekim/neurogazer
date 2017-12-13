@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 .form-group {
+
+  @include clear();
   .control-label {
     font-family: $F-family-en;
     color: $C-font-basic;
@@ -20,5 +22,203 @@
     width: 100%;
     padding: 5px;
     outline: 0;
+  }
+  .form {
+    .btn_wrap {
+      .btn {
+        width:104px;
+        height: 52px;
+        padding:0;
+        font-size: 1.8rem;
+      }
+      .btn-cancel+.btn-primary {
+        margin-left: 7px;
+      }
+    }
+
+    &__label {
+      color: $C-font-dark;
+      font-size: 1.5rem;
+      display: block;
+      padding: 20px 0 10px;
+      .required {
+        color: $C-brand-point;
+      }
+    }
+    &__input {
+      width: 100%;
+      height: 46px;
+      border: 1px solid #d1d7e1;
+      border-radius: 3px;
+      background:#fff;
+      text-indent: 15px;
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+      &.error {
+        border: 1px solid $C-error;
+      }
+    }
+    &__select {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #d1d7e1;
+      border-radius: 3px;
+      background:#fff;
+      text-indent: 15px;
+
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+
+      &.error {
+        border: 1px solid $C-error;
+      }
+
+    }
+    &__textarea {
+      width: 100%;
+      border: 1px solid #d1d7e1;
+      border-radius: 3px;
+      background:#fff;
+      text-indent: 15px;
+      &:focus {
+        border: 1px solid $C-font-dark;
+        color: $C-font-dark;
+        outline: 0;
+      }
+      &.error {
+        border: 1px solid $C-error;
+      }
+    }
+    &__check-wrap {
+      height: 95px;
+      @include clear();
+      padding:0;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: -1px;
+
+    }
+    &__checkbox {
+      margin-top: 30px;
+      position: relative;
+      padding-left: 35px;
+    }
+    &__check-label {
+      font-size: $F-size-big;
+      color: $C-font-dark;
+      .required {
+        color: $C-brand-point;
+      }
+      &:before {
+        @include use-sprite(input_check2);
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: -3px;
+      }
+      &:after {
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: -3px;
+      }
+    }
+    &__select_box {
+      position: relative;
+      padding-left: 23px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &__input-radio {
+      font-size: $F-size-under;
+      color: $C-font-dark;
+
+      &:before {
+        @include use-sprite(input_radio2);
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+      &:after {
+        vertical-align: top;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+    }
+  }
+  .form__checkbox input[type="checkbox"]:checked + .form__check-label:after {
+    @include use-sprite(input_check_on2);
+  }
+  .form__select_box input[type="radio"]:checked + .form__input-radio:after {
+    @include use-sprite(input_radio_on2);
+  }
+  .form__select_box + .form__select_box {
+    margin-left: 30px;
+  }
+  label.error {
+    font-size: $F-size-small;
+  }
+  label.status {
+    font-size: $F-size-small;
+    color: $C-brand-point;
+    padding: 0 0 5px;
+    display: block;
+    margin: 0;
+  }
+  .form-sgroup {
+    @include clear();
+    .form__label {
+      color: $C-font-basic;
+      font-size: $F-size-under;
+    }
+  }
+  .form-inline {
+    float:left;
+
+    +.form-inline {
+      margin-left: 8px;
+    }
+    .btn-primary {
+      height:46px;
+      padding: 0;
+      width: 98px;
+      text-align: center;
+      line-height: 44px;
+      font-weight: $F-weight-bold;
+    }
+    &.select {
+      position: relative;
+      &:after {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 2;
+        @include use-sprite(ico_arrowdown);
+
+      }
+    }
+    &.posi_r {
+      position: relative;
+    }
+  }
+  .form-timer {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10;
+    color: $C-red-point;
+  }
+  .form-box {
+    border: 1px solid #e0e4eb;
+    border-radius: 3px;
+    text-align: center;
+    padding: 22px 0;
   }
 }

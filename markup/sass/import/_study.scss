@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.study_wrap {
+  width: 990px;
+  margin: 0 auto;
+}
+.study_step {
+  margin: 45px auto;
+  height: 74px;
+  &.step1 {
+    @include use-sprite(study_step1);
+  }
+}
+.study {
+  background: $C-white;
+  padding: 40px 0 60px;
+  margin-bottom: 80px;
+  @include clear();
+  &__agreement {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+  &__box {
+    width: 570px;
+    margin: 40px auto;
+  }
+  &__label-desc {
+    padding-left: 35px;
+    padding-top: 5px;
+    color: $C-font-basic;
+    font-size: $F-size-under;
+    clear: both;
+    display: block;
+  }
+  &__info {
+    //border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+  }
+  .form__check-wrap {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    .form__check-label {
+      &:before,
+      &:after {
+        margin-top: 5px;
+      }
+    }
+  }
+  .form__checkbox {
+    float:left;
+  }
+  .agreement-view {
+    float:right;
+    padding-top: 25px;
+    .agree_link {
+      font-size: $F-size-under;
+      color: $C-font-basic;
+      &:after {
+        @include use-sprite(ico_arrow_view2);
+        vertical-align: top;
+        margin: 3px 0 0 5px;
+      }
+    }
+  }
+  .form-group {
+    position: relative;
+  }
+  .help_link {
+    @include use-sprite(ico_help);
+    position: absolute;
+    right: -30px;
+    top: 60px;
+  }
+  .arrow_box {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    left: 575px;
+    top: 35px;
+    white-space: normal;
+    color: $C-font-basic;
+    min-width: 133px;
+    font-size: $F-size-under;
+    line-height: 1.5;
+  }
+  .arrow_box:after, .arrow_box:before {
+    left: -2px;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 4px;
+    margin-top: -4px;
+  }
+  .arrow_box:before {
+    border-color: rgba(214, 214, 214, 0);
+    border-right-color: #d6d6d6;
+    border-width: 4px;
+    margin-top: -4px;
+  }
+}

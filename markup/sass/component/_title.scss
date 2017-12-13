@@ -16,6 +16,11 @@
   border-bottom: 2px solid #333;
   padding-bottom: 12px;
   @include clear();
+  .heading_h1 {
+    font-size: 2.4rem;
+    color: $C-font-dark;
+    font-weight: $F-weight-bold;
+  }
   .heading_h2 {
     float: left;
     font-size: 1.5rem;
@@ -23,5 +28,22 @@
   }
   .heading_btn {
     float:right;
+  }
+}
+.box_tit {
+  height: 52px;
+  background: #f5f6f6;
+  overflow: hidden;
+  .heading_h3 {
+    font-size: 1.6rem;
+    font-weight: $F-weight-bold;
+    color: $C-font-dark;
+    margin: 17px 0 0 30px;
+
+    &:before {
+      @include use-sprite(ico_att);
+      vertical-align: top;
+
+    }
   }
 }

@@ -32,6 +32,22 @@
     font-size: $F-size-small;
     color: $C-font-dark;
   }
+  &.btn-thin-blue {
+    padding: 5px 15px;
+    border: 1px solid #4444e6;
+    border-radius:1px;
+    font-size: $F-size-small;
+    color: $C-white;
+    background: #3779de;
+  }
+  &.btn-thin-gray {
+    padding: 5px 15px;
+    border: 1px solid #8d8d8d;
+    border-radius:1px;
+    font-size: $F-size-small;
+    color: #cecece;
+    background: #979797;
+  }
 }
 
 .btn_study_apply {
@@ -59,7 +75,6 @@
     font-weight: $F-weight-bold;
   }
 }
-
 .btn_send {
   display: inline-block;
   vertical-align: top;
@@ -79,8 +94,31 @@
     margin-left: 3px;
   }
 }
+.btn_apply {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  height:24px;
+  margin-left: 20px;
+  border: 1px solid #d1d7e1;
+  border-radius: 1px;
+  line-height:22px;
+  text-align: center;
+  color: $C-brand-point;
+  font-size: $F-size-small;
+  background: $C-white;
+
+  &:before {
+    @include use-sprite(ico_plus);
+    margin-right: 3px;
+  }
+}
+
 
 .btn_wrap {
   padding: 45px 0;
   @include clear();
+}
+.btn+.btn {
+  margin-left: 5px;
 }

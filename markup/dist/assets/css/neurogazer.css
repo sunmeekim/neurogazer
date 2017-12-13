@@ -432,6 +432,10 @@ i, cite, em, var, address, dfn {
   width: 100%;
 }
 
+.mt5 {
+  margin-top: 5px !important;
+}
+
 .mt10 {
   margin-top: 10px !important;
 }
@@ -450,6 +454,40 @@ i, cite, em, var, address, dfn {
 
 .al_r {
   text-align: right !important;
+}
+
+.arrow_box {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 5px 15px;
+  white-space: nowrap;
+}
+
+.arrow_box:after, .arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.arrow_box:before {
+  border-color: rgba(214, 214, 214, 0);
+  border-bottom-color: #d6d6d6;
+  border-width: 7px;
+  margin-left: -7px;
 }
 
 @-webkit-keyframes loading {
@@ -507,7 +545,7 @@ i, cite, em, var, address, dfn {
 .header .logo__link {
   width: 137px;
   height: 24px;
-  background-position: -419px -381px;
+  background-position: -1203px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -757,7 +795,7 @@ i, cite, em, var, address, dfn {
 .footer .foot_area .foot_copy:after {
   width: 117px;
   height: 20px;
-  background-position: -263px -462px;
+  background-position: -971px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -775,6 +813,15 @@ i, cite, em, var, address, dfn {
 }
 
 /* component */
+.form-group:before, .form-group:after {
+  display: table;
+  content: "";
+}
+
+.form-group:after {
+  clear: both;
+}
+
 .form-group .control-label {
   font-family: "Open Sans", sans-serif !important;
   color: #888;
@@ -798,6 +845,283 @@ i, cite, em, var, address, dfn {
   width: 100%;
   padding: 5px;
   outline: 0;
+}
+
+.form-group .form .btn_wrap .btn {
+  width: 104px;
+  height: 52px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.form-group .form .btn_wrap .btn-cancel + .btn-primary {
+  margin-left: 7px;
+}
+
+.form-group .form__label {
+  color: #242424;
+  font-size: 1.5rem;
+  display: block;
+  padding: 20px 0 10px;
+}
+
+.form-group .form__label .required {
+  color: #3779de;
+}
+
+.form-group .form__input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.form-group .form__input:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.form-group .form__input.error {
+  border: 1px solid #ff0000;
+}
+
+.form-group .form__select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.form-group .form__select:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.form-group .form__select.error {
+  border: 1px solid #ff0000;
+}
+
+.form-group .form__textarea {
+  width: 100%;
+  border: 1px solid #d1d7e1;
+  border-radius: 3px;
+  background: #fff;
+  text-indent: 15px;
+}
+
+.form-group .form__textarea:focus {
+  border: 1px solid #242424;
+  color: #242424;
+  outline: 0;
+}
+
+.form-group .form__textarea.error {
+  border: 1px solid #ff0000;
+}
+
+.form-group .form__check-wrap {
+  height: 95px;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: -1px;
+}
+
+.form-group .form__check-wrap:before, .form-group .form__check-wrap:after {
+  display: table;
+  content: "";
+}
+
+.form-group .form__check-wrap:after {
+  clear: both;
+}
+
+.form-group .form__checkbox {
+  margin-top: 30px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.form-group .form__check-label {
+  font-size: 1.6rem;
+  color: #242424;
+}
+
+.form-group .form__check-label .required {
+  color: #3779de;
+}
+
+.form-group .form__check-label:before {
+  width: 26px;
+  height: 26px;
+  background-position: -1009px -145px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.form-group .form__check-label:after {
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.form-group .form__select_box {
+  position: relative;
+  padding-left: 23px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-group .form__input-radio {
+  font-size: 1.3rem;
+  color: #242424;
+}
+
+.form-group .form__input-radio:before {
+  width: 17px;
+  height: 17px;
+  background-position: -1167px -145px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.form-group .form__input-radio:after {
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.form-group .form__checkbox input[type="checkbox"]:checked + .form__check-label:after {
+  width: 26px;
+  height: 26px;
+  background-position: -1039px -145px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.form-group .form__select_box input[type="radio"]:checked + .form__input-radio:after {
+  width: 17px;
+  height: 17px;
+  background-position: -1125px -145px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.form-group .form__select_box + .form__select_box {
+  margin-left: 30px;
+}
+
+.form-group label.error {
+  font-size: 1.2rem;
+}
+
+.form-group label.status {
+  font-size: 1.2rem;
+  color: #3779de;
+  padding: 0 0 5px;
+  display: block;
+  margin: 0;
+}
+
+.form-group .form-sgroup:before, .form-group .form-sgroup:after {
+  display: table;
+  content: "";
+}
+
+.form-group .form-sgroup:after {
+  clear: both;
+}
+
+.form-group .form-sgroup .form__label {
+  color: #888;
+  font-size: 1.3rem;
+}
+
+.form-group .form-inline {
+  float: left;
+}
+
+.form-group .form-inline + .form-inline {
+  margin-left: 8px;
+}
+
+.form-group .form-inline .btn-primary {
+  height: 46px;
+  padding: 0;
+  width: 98px;
+  text-align: center;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.form-group .form-inline.select {
+  position: relative;
+}
+
+.form-group .form-inline.select:after {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 2;
+  width: 7px;
+  height: 4px;
+  background-position: -1264px -106px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.form-group .form-inline.posi_r {
+  position: relative;
+}
+
+.form-group .form-timer {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 10;
+  color: #f1504a;
+}
+
+.form-group .form-box {
+  border: 1px solid #e0e4eb;
+  border-radius: 3px;
+  text-align: center;
+  padding: 22px 0;
 }
 
 .btn {
@@ -838,6 +1162,24 @@ i, cite, em, var, address, dfn {
   color: #242424;
 }
 
+.btn.btn-thin-blue {
+  padding: 5px 15px;
+  border: 1px solid #4444e6;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #3779de;
+}
+
+.btn.btn-thin-gray {
+  padding: 5px 15px;
+  border: 1px solid #8d8d8d;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  color: #cecece;
+  background: #979797;
+}
+
 .btn_study_apply {
   display: inline-block;
   vertical-align: top;
@@ -856,7 +1198,7 @@ i, cite, em, var, address, dfn {
 .btn_study_apply:after {
   width: 7px;
   height: 8px;
-  background-position: -703px -154px;
+  background-position: -1253px -106px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -891,7 +1233,7 @@ i, cite, em, var, address, dfn {
 .btn_send:after {
   width: 4px;
   height: 7px;
-  background-position: -702px -174px;
+  background-position: -1239px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -899,6 +1241,34 @@ i, cite, em, var, address, dfn {
   background-repeat: no-repeat;
   content: '';
   margin-left: 3px;
+}
+
+.btn_apply {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  height: 24px;
+  margin-left: 20px;
+  border: 1px solid #d1d7e1;
+  border-radius: 1px;
+  line-height: 22px;
+  text-align: center;
+  color: #3779de;
+  font-size: 1.2rem;
+  background: #fff;
+}
+
+.btn_apply:before {
+  width: 8px;
+  height: 8px;
+  background-position: -1241px -106px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-right: 3px;
 }
 
 .btn_wrap {
@@ -912,6 +1282,10 @@ i, cite, em, var, address, dfn {
 
 .btn_wrap:after {
   clear: both;
+}
+
+.btn + .btn {
+  margin-left: 5px;
 }
 
 .title {
@@ -943,6 +1317,12 @@ i, cite, em, var, address, dfn {
   clear: both;
 }
 
+.title_wrap .heading_h1 {
+  font-size: 2.4rem;
+  color: #242424;
+  font-weight: 700;
+}
+
 .title_wrap .heading_h2 {
   float: left;
   font-size: 1.5rem;
@@ -951,6 +1331,32 @@ i, cite, em, var, address, dfn {
 
 .title_wrap .heading_btn {
   float: right;
+}
+
+.box_tit {
+  height: 52px;
+  background: #f5f6f6;
+  overflow: hidden;
+}
+
+.box_tit .heading_h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #242424;
+  margin: 17px 0 0 30px;
+}
+
+.box_tit .heading_h3:before {
+  width: 24px;
+  height: 24px;
+  background-position: -1344px -78px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
 }
 
 .tab__list:before, .tab__list:after {
@@ -984,6 +1390,59 @@ i, cite, em, var, address, dfn {
   background: #fff;
   line-height: 52px;
   font-weight: 700;
+}
+
+.table_wrap .table_sgroup {
+  padding-bottom: 10px;
+}
+
+.table_wrap .table_sgroup .table_total {
+  float: left;
+}
+
+.table_wrap .table_sgroup .table_btn {
+  float: right;
+}
+
+.table_wrap .table_sgroup:before, .table_wrap .table_sgroup:after {
+  display: table;
+  content: "";
+}
+
+.table_wrap .table_sgroup:after {
+  clear: both;
+}
+
+.table_wrap .table-block .tbl {
+  width: 100%;
+  border-top: 2px solid #242424;
+}
+
+.table_wrap .table-block .tbl__th {
+  background: #f5f6f6;
+  height: 54px;
+  font-weight: 700;
+}
+
+.table_wrap .table-block .tbl__td {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 0;
+  font-size: 1.4rem;
+  color: #454545;
+  font-weight: 700;
+}
+
+.table_wrap .table-block .tbl__link {
+  color: #3779de;
+}
+
+.table_wrap .table-block .tbl__block {
+  position: relative;
+}
+
+.table_wrap .table-block .tbl__block .arrow_box {
+  margin-top: 8px;
+  font-size: 1.1rem;
 }
 
 .panel__header:before, .panel__header:after, .panel__body:before, .panel__body:after {
@@ -1124,7 +1583,7 @@ i, cite, em, var, address, dfn {
   vertical-align: middle;
   width: 6px;
   height: 9px;
-  background-position: -682px -174px;
+  background-position: -1229px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1142,7 +1601,7 @@ i, cite, em, var, address, dfn {
   vertical-align: middle;
   width: 6px;
   height: 9px;
-  background-position: -692px -174px;
+  background-position: -1219px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1181,7 +1640,7 @@ i, cite, em, var, address, dfn {
 .spot_area .spot1__info-logo {
   width: 228px;
   height: 39px;
-  background-position: -263px -419px;
+  background-position: -971px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1208,7 +1667,7 @@ i, cite, em, var, address, dfn {
 .cont1:before {
   width: 152px;
   height: 221px;
-  background-position: -419px 0;
+  background-position: -419px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1312,7 +1771,7 @@ i, cite, em, var, address, dfn {
 .cont3__team1 .cont3__team1-area:after {
   width: 129px;
   height: 152px;
-  background-position: -419px -225px;
+  background-position: -575px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1505,7 +1964,7 @@ i, cite, em, var, address, dfn {
   top: -125px;
   width: 103px;
   height: 103px;
-  background-position: -156px -419px;
+  background-position: -864px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1653,7 +2112,7 @@ i, cite, em, var, address, dfn {
 .service_cont1:before {
   width: 50px;
   height: 146px;
-  background-position: -575px 0;
+  background-position: 0 -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1710,7 +2169,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -1124px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1725,7 +2184,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -1092px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1777,7 +2236,7 @@ i, cite, em, var, address, dfn {
 .service_cont3:before {
   width: 152px;
   height: 221px;
-  background-position: -419px 0;
+  background-position: -419px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1832,7 +2291,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -1124px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1847,7 +2306,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -1092px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1979,7 +2438,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -1124px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1994,7 +2453,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -1092px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2084,7 +2543,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -1124px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2099,7 +2558,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -1092px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2166,7 +2625,7 @@ i, cite, em, var, address, dfn {
 .science_cont1:before {
   width: 152px;
   height: 129px;
-  background-position: 0 -419px;
+  background-position: -708px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2265,7 +2724,7 @@ i, cite, em, var, address, dfn {
 .science_cont3:before {
   width: 152px;
   height: 221px;
-  background-position: -419px 0;
+  background-position: -419px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2596,7 +3055,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-facebook:before {
   width: 9px;
   height: 17px;
-  background-position: -650px -174px;
+  background-position: -1399px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2608,7 +3067,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-twitter:before {
   width: 19px;
   height: 15px;
-  background-position: -661px -154px;
+  background-position: -1183px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2621,7 +3080,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-youtube:before {
   width: 23px;
   height: 16px;
-  background-position: -688px -127px;
+  background-position: -1156px -121px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2733,7 +3192,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__title:before {
   width: 34px;
   height: 34px;
-  background-position: -629px -89px;
+  background-position: -971px -145px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2808,7 +3267,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__id-save:before {
   width: 17px;
   height: 17px;
-  background-position: -629px -174px;
+  background-position: -1146px -145px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2881,7 +3340,7 @@ label.error {
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   width: 17px;
   height: 17px;
-  background-position: -694px -89px;
+  background-position: -1188px -145px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2936,7 +3395,7 @@ label.error {
 .find_wrap .find__input-phone:before {
   width: 23px;
   height: 23px;
-  background-position: -629px -127px;
+  background-position: -1098px -145px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3042,7 +3501,7 @@ label.error {
   z-index: 2;
   width: 7px;
   height: 4px;
-  background-position: -667px -116px;
+  background-position: -1264px -106px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3121,7 +3580,7 @@ label.error {
 .find_wrap .find__ok-message:before {
   width: 85px;
   height: 85px;
-  background-position: -629px 0;
+  background-position: -419px -303px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3200,7 +3659,7 @@ label.error {
 .find__result-email input[type="radio"]:checked + .find__input-phone:after {
   width: 23px;
   height: 23px;
-  background-position: -667px -89px;
+  background-position: -1372px -78px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3259,6 +3718,10 @@ label.error {
   line-height: 1.5;
 }
 
+.inquire__regist {
+  padding: 10px;
+}
+
 .inquire .ico_wait,
 .inquire .ico_end {
   display: inline-block;
@@ -3280,7 +3743,7 @@ label.error {
 .inquire .ico_arrow {
   width: 15px;
   height: 9px;
-  background-position: -684px -154px;
+  background-position: -1203px -106px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3300,7 +3763,7 @@ label.error {
 .view .ico_arrow {
   width: 15px;
   height: 9px;
-  background-position: -663px -174px;
+  background-position: -1222px -106px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3313,12 +3776,204 @@ label.error {
   display: block;
 }
 
+.inquire + .btn_wrap .btn {
+  width: 104px;
+  height: 52px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.inquire + .btn_wrap .btn-cancel + .btn-primary {
+  margin-left: 7px;
+}
+
+.progress {
+  border-top: 1px solid #eff5f5;
+  padding: 40px;
+  background: #fff;
+}
+
+.summary {
+  background: #fff;
+  margin-top: 30px;
+}
+
+.summary .sum_txt {
+  padding: 30px;
+  color: #454545;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.summary .sum_txt p + p {
+  margin-top: 20px;
+}
+
+.summary .sum_txt strong {
+  font-weight: 700;
+}
+
+.study_wrap {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.study_step {
+  margin: 45px auto;
+  height: 74px;
+}
+
+.study_step.step1 {
+  width: 989px;
+  height: 74px;
+  background-position: -419px 0;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.study {
+  background: #fff;
+  padding: 40px 0 60px;
+  margin-bottom: 80px;
+}
+
+.study:before, .study:after {
+  display: table;
+  content: "";
+}
+
+.study:after {
+  clear: both;
+}
+
+.study__agreement {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.study__box {
+  width: 570px;
+  margin: 40px auto;
+}
+
+.study__label-desc {
+  padding-left: 35px;
+  padding-top: 5px;
+  color: #888;
+  font-size: 1.3rem;
+  clear: both;
+  display: block;
+}
+
+.study__info {
+  padding-bottom: 40px;
+}
+
+.study .form__check-wrap {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.study .form__check-wrap .form__check-label:before, .study .form__check-wrap .form__check-label:after {
+  margin-top: 5px;
+}
+
+.study .form__checkbox {
+  float: left;
+}
+
+.study .agreement-view {
+  float: right;
+  padding-top: 25px;
+}
+
+.study .agreement-view .agree_link {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.study .agreement-view .agree_link:after {
+  width: 9px;
+  height: 14px;
+  background-position: -1206px -121px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  margin: 3px 0 0 5px;
+}
+
+.study .form-group {
+  position: relative;
+}
+
+.study .help_link {
+  width: 25px;
+  height: 25px;
+  background-position: -1069px -145px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 60px;
+}
+
+.study .arrow_box {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  left: 575px;
+  top: 35px;
+  white-space: normal;
+  color: #888;
+  min-width: 133px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.study .arrow_box:after, .study .arrow_box:before {
+  left: -2px;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.study .arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 4px;
+  margin-top: -4px;
+}
+
+.study .arrow_box:before {
+  border-color: rgba(214, 214, 214, 0);
+  border-right-color: #d6d6d6;
+  border-width: 4px;
+  margin-top: -4px;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   .header .logo__link {
     width: 137px;
     height: 24px;
-    background-position: -417px -354px;
-    background-size: 708px auto;
+    background-position: -1191px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3329,8 +3984,68 @@ label.error {
   .footer .foot_area .foot_copy:after {
     width: 117px;
     height: 20px;
-    background-position: -417px -380px;
-    background-size: 708px auto;
+    background-position: -961px -117px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .form-group .form__check-label:before {
+    width: 26px;
+    height: 26px;
+    background-position: -997px -139px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .form-group .form__input-radio:before {
+    width: 17px;
+    height: 17px;
+    background-position: -1118px -139px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .form-group .form__checkbox input[type="checkbox"]:checked + .form__check-label:after {
+    width: 26px;
+    height: 26px;
+    background-position: -1025px -139px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .form-group .form__select_box input[type="radio"]:checked + .form__input-radio:after {
+    width: 17px;
+    height: 17px;
+    background-position: -1080px -139px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .form-group .form-inline.select:after {
+    width: 14px;
+    height: 8px;
+    background-position: -1225px -102px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3341,8 +4056,8 @@ label.error {
   .btn_study_apply:after {
     width: 7px;
     height: 8px;
-    background-position: -682px -141px;
-    background-size: 708px auto;
+    background-position: -1251px -102px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3353,8 +4068,32 @@ label.error {
   .btn_send:after {
     width: 4px;
     height: 7px;
-    background-position: -691px -141px;
-    background-size: 708px auto;
+    background-position: -1260px -102px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .btn_apply:before {
+    width: 8px;
+    height: 8px;
+    background-position: -1241px -102px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .box_tit .heading_h3:before {
+    width: 24px;
+    height: 24px;
+    background-position: -1330px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3365,8 +4104,8 @@ label.error {
   .pagenate .prev_link:before {
     width: 6px;
     height: 9px;
-    background-position: -634px -160px;
-    background-size: 708px auto;
+    background-position: -1205px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3377,8 +4116,8 @@ label.error {
   .pagenate .next_link:after {
     width: 6px;
     height: 9px;
-    background-position: -642px -160px;
-    background-size: 708px auto;
+    background-position: -1197px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3401,8 +4140,8 @@ label.error {
   .spot_area .spot1__info-logo {
     width: 228px;
     height: 39px;
-    background-position: -236px -417px;
-    background-size: 708px auto;
+    background-position: -961px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3413,8 +4152,8 @@ label.error {
   .cont1:before {
     width: 152px;
     height: 221px;
-    background-position: -417px 0;
-    background-size: 708px auto;
+    background-position: -417px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3437,8 +4176,8 @@ label.error {
   .cont3__team1 .cont3__team1-area:after {
     width: 129px;
     height: 152px;
-    background-position: 0 -417px;
-    background-size: 708px auto;
+    background-position: -571px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3450,7 +4189,7 @@ label.error {
     width: 415px;
     height: 415px;
     background-position: 0 0;
-    background-size: 708px auto;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3461,8 +4200,8 @@ label.error {
   .cont4__area:after {
     width: 103px;
     height: 103px;
-    background-position: -131px -417px;
-    background-size: 708px auto;
+    background-position: -856px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3485,8 +4224,8 @@ label.error {
   .service_cont1:before {
     width: 50px;
     height: 146px;
-    background-position: -571px 0;
-    background-size: 708px auto;
+    background-position: 0 -417px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3497,8 +4236,8 @@ label.error {
   .service_cont1__info .service_cont1__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -623px -123px;
-    background-size: 708px auto;
+    background-position: -1110px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3509,8 +4248,8 @@ label.error {
   .service_cont1__info .service_cont1__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -653px -123px;
-    background-size: 708px auto;
+    background-position: -1080px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3533,8 +4272,8 @@ label.error {
   .service_cont3:before {
     width: 152px;
     height: 221px;
-    background-position: -417px 0;
-    background-size: 708px auto;
+    background-position: -417px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3545,8 +4284,8 @@ label.error {
   .service_cont3__info .service_cont3__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -623px -123px;
-    background-size: 708px auto;
+    background-position: -1110px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3557,8 +4296,8 @@ label.error {
   .service_cont3__info .service_cont3__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -653px -123px;
-    background-size: 708px auto;
+    background-position: -1080px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3569,8 +4308,8 @@ label.error {
   .service_cont4__info .service_cont4__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -623px -123px;
-    background-size: 708px auto;
+    background-position: -1110px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3581,8 +4320,8 @@ label.error {
   .service_cont4__info .service_cont4__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -653px -123px;
-    background-size: 708px auto;
+    background-position: -1080px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3605,8 +4344,8 @@ label.error {
   .service_cont5__info .service_cont5__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -623px -123px;
-    background-size: 708px auto;
+    background-position: -1110px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3617,8 +4356,8 @@ label.error {
   .service_cont5__info .service_cont5__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -653px -123px;
-    background-size: 708px auto;
+    background-position: -1080px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3641,8 +4380,8 @@ label.error {
   .science_cont1:before {
     width: 152px;
     height: 129px;
-    background-position: -417px -223px;
-    background-size: 708px auto;
+    background-position: -702px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3665,8 +4404,8 @@ label.error {
   .science_cont3:before {
     width: 152px;
     height: 221px;
-    background-position: -417px 0;
-    background-size: 708px auto;
+    background-position: -417px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3677,8 +4416,8 @@ label.error {
   .contact__sns-facebook:before {
     width: 9px;
     height: 17px;
-    background-position: -623px -160px;
-    background-size: 708px auto;
+    background-position: -1156px -139px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3689,8 +4428,8 @@ label.error {
   .contact__sns-twitter:before {
     width: 19px;
     height: 15px;
-    background-position: -661px -141px;
-    background-size: 708px auto;
+    background-position: -1165px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3701,8 +4440,8 @@ label.error {
   .contact__sns-youtube:before {
     width: 23px;
     height: 16px;
-    background-position: -683px -123px;
-    background-size: 708px auto;
+    background-position: -1140px -117px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3713,8 +4452,8 @@ label.error {
   .login_wrap .login__title:before {
     width: 34px;
     height: 34px;
-    background-position: -623px -87px;
-    background-size: 708px auto;
+    background-position: -961px -139px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3725,8 +4464,8 @@ label.error {
   .login_wrap .login__id-save:before {
     width: 17px;
     height: 17px;
-    background-position: -642px -141px;
-    background-size: 708px auto;
+    background-position: -1099px -139px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3737,8 +4476,8 @@ label.error {
   .login__option input[type="checkbox"]:checked + .login__id-save:after {
     width: 17px;
     height: 17px;
-    background-position: -623px -141px;
-    background-size: 708px auto;
+    background-position: -1137px -139px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3749,8 +4488,8 @@ label.error {
   .find_wrap .find__input-phone:before {
     width: 23px;
     height: 23px;
-    background-position: -684px -87px;
-    background-size: 708px auto;
+    background-position: -1381px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3761,8 +4500,8 @@ label.error {
   .find_wrap .find__form-inline.select:after {
     width: 14px;
     height: 8px;
-    background-position: -693px -112px;
-    background-size: 708px auto;
+    background-position: -1225px -102px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3773,8 +4512,8 @@ label.error {
   .find_wrap .find__ok-message:before {
     width: 85px;
     height: 85px;
-    background-position: -623px 0;
-    background-size: 708px auto;
+    background-position: -417px -299px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3786,8 +4525,8 @@ label.error {
   .find__result-email input[type="radio"]:checked + .find__input-phone:after {
     width: 23px;
     height: 23px;
-    background-position: -659px -87px;
-    background-size: 708px auto;
+    background-position: -1356px -76px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3798,8 +4537,8 @@ label.error {
   .inquire .ico_arrow {
     width: 15px;
     height: 9px;
-    background-position: -659px -112px;
-    background-size: 708px auto;
+    background-position: -1191px -102px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
@@ -3810,8 +4549,44 @@ label.error {
   .view .ico_arrow {
     width: 15px;
     height: 9px;
-    background-position: -676px -112px;
-    background-size: 708px auto;
+    background-position: -1208px -102px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .study_step.step1 {
+    width: 989px;
+    height: 74px;
+    background-position: -417px 0;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .study .agreement-view .agree_link:after {
+    width: 9px;
+    height: 14px;
+    background-position: -1186px -117px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .study .help_link {
+    width: 25px;
+    height: 25px;
+    background-position: -1053px -139px;
+    background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
     text-indent: -999px;
