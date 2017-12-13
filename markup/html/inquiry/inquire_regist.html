@@ -1,0 +1,45 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 1:1 문의_등록","filePath": "../"})
+<body>
+<div class="wrap other">
+    <!-- header_area -->
+    @@include('top.html')
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <h2 class="title"><span class="heading_h1">1:1 문의내역</span></h2>
+
+            <div class="inquire">
+                <div class="title_wrap">
+                    <h4 class="heading_h2">고객님의 상담 및 문의사항에 대한 해결을 위해 최선을 다하겠습니다.</h4>
+                    <span class="heading_btn">
+                        <a href="#" class="btn btn-thin">1:1 문의내역</a>
+                    </span>
+                </div>
+
+                <div class="inquire__regist">
+                    <div class="form-group">
+                        <label class="find__label" for="pw_reset">비밀번호 재설정
+                            <p class="find__id-desc">다른 아이디나 사이트에서 사용한 적 없는 안정한 비밀번호로 변경해 주세요.</p>
+                        </label>
+                        <input type="text" class="find__input" id="pw_reset" placeholder="새 비밀번호 (영문(소문자) 및 숫자 조합 6 ~ 20자.특수문자 제외)"/>
+                    </div>
+                    <div class="find__form-group  mt10">
+                        <label class="g_invisible" for="pw_reset2">비밀번호 재입력</label>
+                        <input type="password" class="find__input error" id="pw_reset2" placeholder="새 비밀번호 (영문(소문자) 및 숫자 조합 6 ~ 20자.특수문자 제외)"/>
+                        <label class="error">비밀번호가 일치하지 않습니다.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

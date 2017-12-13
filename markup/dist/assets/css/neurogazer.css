@@ -383,12 +383,73 @@ i, cite, em, var, address, dfn {
   content: "\f110";
 }
 
+/* 페이지 그리드 */
+.col-md-1 {
+  width: 8.33333333%;
+}
+
+.col-md-2 {
+  width: 16.66666667%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-md-4 {
+  width: 33.33333333%;
+}
+
+.col-md-5 {
+  width: 41.66666667%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-7 {
+  width: 58.333333%;
+}
+
+.col-md-8 {
+  width: 66.66666667%;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+.col-md-10 {
+  width: 83.33333333%;
+}
+
+.col-md-11 {
+  width: 91.66666667%;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
 .mt10 {
   margin-top: 10px !important;
 }
 
+.mt30 {
+  margin-top: 30px !important;
+}
+
 .al_c {
   text-align: center !important;
+}
+
+.al_l {
+  text-align: left !important;
+}
+
+.al_r {
+  text-align: right !important;
 }
 
 @-webkit-keyframes loading {
@@ -446,7 +507,7 @@ i, cite, em, var, address, dfn {
 .header .logo__link {
   width: 137px;
   height: 24px;
-  background-position: -419px -358px;
+  background-position: -419px -381px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -696,7 +757,7 @@ i, cite, em, var, address, dfn {
 .footer .foot_area .foot_copy:after {
   width: 117px;
   height: 20px;
-  background-position: -419px -386px;
+  background-position: -263px -462px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -769,6 +830,14 @@ i, cite, em, var, address, dfn {
   color: #242424;
 }
 
+.btn.btn-thin {
+  padding: 5px 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  font-size: 1.2rem;
+  color: #242424;
+}
+
 .btn_study_apply {
   display: inline-block;
   vertical-align: top;
@@ -787,7 +856,7 @@ i, cite, em, var, address, dfn {
 .btn_study_apply:after {
   width: 7px;
   height: 8px;
-  background-position: -684px -154px;
+  background-position: -703px -154px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -822,7 +891,7 @@ i, cite, em, var, address, dfn {
 .btn_send:after {
   width: 4px;
   height: 7px;
-  background-position: -667px -116px;
+  background-position: -702px -174px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -860,6 +929,30 @@ i, cite, em, var, address, dfn {
   color: #242424;
 }
 
+.title_wrap {
+  border-bottom: 2px solid #333;
+  padding-bottom: 12px;
+}
+
+.title_wrap:before, .title_wrap:after {
+  display: table;
+  content: "";
+}
+
+.title_wrap:after {
+  clear: both;
+}
+
+.title_wrap .heading_h2 {
+  float: left;
+  font-size: 1.5rem;
+  color: #242424;
+}
+
+.title_wrap .heading_btn {
+  float: right;
+}
+
 .tab__list:before, .tab__list:after {
   display: table;
   content: "";
@@ -893,6 +986,172 @@ i, cite, em, var, address, dfn {
   font-weight: 700;
 }
 
+.panel__header:before, .panel__header:after, .panel__body:before, .panel__body:after {
+  display: table;
+  content: "";
+}
+
+.panel__header:after, .panel__body:after {
+  clear: both;
+}
+
+.panel__header {
+  background: #f8f9fa;
+  height: 53px;
+  border: 1px solid #d5dcdc;
+  border-width: 1px 0;
+}
+
+.panel__header .panel__inline {
+  line-height: 53px;
+  font-weight: 700;
+}
+
+.panel__inline {
+  float: left;
+}
+
+.panel__wrap {
+  border-bottom: 1px solid #eff1f1;
+}
+
+.panel__toggle {
+  display: block;
+  padding: 15px 0;
+  color: #242424;
+}
+
+.panel__toggle:before, .panel__toggle:after {
+  display: table;
+  content: "";
+}
+
+.panel__toggle:after {
+  clear: both;
+}
+
+.panel__detail {
+  display: none;
+  background: #fafafb;
+  padding: 20px 0 30px;
+}
+
+.panel__detail:before, .panel__detail:after {
+  display: table;
+  content: "";
+}
+
+.panel__detail:after {
+  clear: both;
+}
+
+.panel__detail-paragraph {
+  color: #888;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.panel__detail-answer {
+  background: #fff;
+  padding: 15px 30px;
+  margin-top: 15px;
+}
+
+.pagenate {
+  display: block;
+  text-align: center;
+}
+
+.pagenate:before, .pagenate:after {
+  display: table;
+  content: "";
+}
+
+.pagenate:after {
+  clear: both;
+}
+
+.pagenate .paging {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pagenate .page_link {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 25px;
+  font-family: "Noto Sans", sans-serif !important;
+  font-size: 1.2rem;
+  color: #797979;
+  font-weight: 700;
+}
+
+.pagenate .page_link.current, .pagenate .page_link:hover {
+  background: #434343;
+  border-color: #393939;
+  color: #fff;
+}
+
+.pagenate .page_link + .page_link {
+  margin-left: 5px;
+}
+
+.pagenate .prev_link,
+.pagenate .next_link {
+  color: #797979;
+  font-size: 1.1rem;
+  font-family: "Noto Sans", sans-serif !important;
+  height: 25px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.pagenate .prev_link.disabled,
+.pagenate .next_link.disabled {
+  opacity: .5;
+}
+
+.pagenate .prev_link {
+  margin-right: 15px;
+}
+
+.pagenate .prev_link:before {
+  vertical-align: middle;
+  width: 6px;
+  height: 9px;
+  background-position: -682px -174px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-right: 5px;
+}
+
+.pagenate .next_link {
+  margin-left: 15px;
+}
+
+.pagenate .next_link:after {
+  vertical-align: middle;
+  width: 6px;
+  height: 9px;
+  background-position: -692px -174px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  margin-left: 5px;
+}
+
 /* import */
 .spot_area {
   position: relative;
@@ -922,7 +1181,7 @@ i, cite, em, var, address, dfn {
 .spot_area .spot1__info-logo {
   width: 228px;
   height: 39px;
-  background-position: -240px -419px;
+  background-position: -263px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1053,7 +1312,7 @@ i, cite, em, var, address, dfn {
 .cont3__team1 .cont3__team1-area:after {
   width: 129px;
   height: 152px;
-  background-position: 0 -419px;
+  background-position: -419px -225px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1246,7 +1505,7 @@ i, cite, em, var, address, dfn {
   top: -125px;
   width: 103px;
   height: 103px;
-  background-position: -133px -419px;
+  background-position: -156px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1451,7 +1710,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -629px -154px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1466,7 +1725,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -656px -127px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1573,7 +1832,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -629px -154px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1588,7 +1847,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -656px -127px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1720,7 +1979,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -629px -154px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1735,7 +1994,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -656px -127px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1825,7 +2084,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -656px -127px;
+  background-position: -629px -154px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1840,7 +2099,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -629px -154px;
+  background-position: -656px -127px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1907,7 +2166,7 @@ i, cite, em, var, address, dfn {
 .science_cont1:before {
   width: 152px;
   height: 129px;
-  background-position: -419px -225px;
+  background-position: 0 -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2549,7 +2808,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__id-save:before {
   width: 17px;
   height: 17px;
-  background-position: -694px -89px;
+  background-position: -629px -174px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2622,7 +2881,7 @@ label.error {
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   width: 17px;
   height: 17px;
-  background-position: -629px -174px;
+  background-position: -694px -89px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2783,7 +3042,7 @@ label.error {
   z-index: 2;
   width: 7px;
   height: 4px;
-  background-position: -675px -116px;
+  background-position: -667px -116px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2955,6 +3214,105 @@ label.error {
   color: #242424;
 }
 
+.inquire {
+  border-top: 1px solid #eff5f5;
+  padding: 40px;
+  background: #fff;
+}
+
+.inquire__lst {
+  margin-top: 30px;
+}
+
+.inquire__question {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 550px;
+  margin: 2px 0 0 10px;
+}
+
+.inquire__question-time {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.inquire__writeinfo {
+  color: #242424;
+  font-size: 1.2rem;
+}
+
+.inquire__answer-writer {
+  font-weight: 700;
+}
+
+.inquire__answer-writer strong {
+  font-weight: 700;
+}
+
+.inquire__answer-timer {
+  color: #888;
+}
+
+.inquire__answer {
+  margin-top: 8px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.inquire .ico_wait,
+.inquire .ico_end {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px 12px;
+  border: 1px solid #d1d7e1;
+  border-radius: 2px;
+  background: #fff;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.inquire .ico_end {
+  border: 1px solid #3779de;
+  background: #3779de;
+  color: #fff;
+}
+
+.inquire .ico_arrow {
+  width: 15px;
+  height: 9px;
+  background-position: -684px -154px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.wait .ico_arrow {
+  opacity: .5;
+}
+
+.wait .panel__detail {
+  display: none;
+}
+
+.view .ico_arrow {
+  width: 15px;
+  height: 9px;
+  background-position: -663px -174px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.view + .panel__detail {
+  display: block;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.3020833333333333), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
   .header .logo__link {
     width: 137px;
@@ -2983,7 +3341,7 @@ label.error {
   .btn_study_apply:after {
     width: 7px;
     height: 8px;
-    background-position: -675px -112px;
+    background-position: -682px -141px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;
@@ -2995,7 +3353,31 @@ label.error {
   .btn_send:after {
     width: 4px;
     height: 7px;
-    background-position: -684px -112px;
+    background-position: -691px -141px;
+    background-size: 708px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .pagenate .prev_link:before {
+    width: 6px;
+    height: 9px;
+    background-position: -634px -160px;
+    background-size: 708px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .pagenate .next_link:after {
+    width: 6px;
+    height: 9px;
+    background-position: -642px -160px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;
@@ -3343,7 +3725,7 @@ label.error {
   .login_wrap .login__id-save:before {
     width: 17px;
     height: 17px;
-    background-position: -623px -141px;
+    background-position: -642px -141px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;
@@ -3355,7 +3737,7 @@ label.error {
   .login__option input[type="checkbox"]:checked + .login__id-save:after {
     width: 17px;
     height: 17px;
-    background-position: -642px -141px;
+    background-position: -623px -141px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;
@@ -3379,7 +3761,7 @@ label.error {
   .find_wrap .find__form-inline.select:after {
     width: 14px;
     height: 8px;
-    background-position: -659px -112px;
+    background-position: -693px -112px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;
@@ -3405,6 +3787,30 @@ label.error {
     width: 23px;
     height: 23px;
     background-position: -659px -87px;
+    background-size: 708px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .inquire .ico_arrow {
+    width: 15px;
+    height: 9px;
+    background-position: -659px -112px;
+    background-size: 708px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .view .ico_arrow {
+    width: 15px;
+    height: 9px;
+    background-position: -676px -112px;
     background-size: 708px auto;
     overflow: hidden;
     display: inline-block;

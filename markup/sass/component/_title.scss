@@ -10,4 +10,18 @@
     font-weight: $F-weight-bold;
     color: $C-font-dark;
   }
+
+}
+.title_wrap {
+  border-bottom: 2px solid #333;
+  padding-bottom: 12px;
+  @include clear();
+  .heading_h2 {
+    float: left;
+    font-size: 1.5rem;
+    color: $C-font-dark;
+  }
+  .heading_btn {
+    float:right;
+  }
 }

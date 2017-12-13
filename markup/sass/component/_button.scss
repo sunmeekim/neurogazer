@@ -25,6 +25,13 @@
     border-color: #d8d8d8;
     color: $C-font-dark;
   }
+  &.btn-thin {
+    padding: 5px 15px;
+    border: 1px solid #dbdbdb;
+    border-radius:1px;
+    font-size: $F-size-small;
+    color: $C-font-dark;
+  }
 }
 
 .btn_study_apply {
