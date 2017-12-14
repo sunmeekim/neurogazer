@@ -113,8 +113,27 @@
     margin-right: 3px;
   }
 }
+.btn_apply-plus {
+  display: block;
+  height: 55px;
+  background: #f0f1f1;
+  border: 1px solid #d5dcdc;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 55px;
+  color: $C-font-dark;
+  font-size: $F-size;
 
-
+  &:before {
+    @include use-sprite(ico_plus2);
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -3px;
+  }
+}
+.btn_delete {
+  @include use-sprite(ico_delete);
+}
 .btn_wrap {
   padding: 45px 0;
   @include clear();

@@ -2,6 +2,22 @@
 .study_wrap {
   width: 990px;
   margin: 0 auto;
+  .btn_wrap {
+    .btn {
+      width:104px;
+      height: 52px;
+      padding:0;
+      font-size: 1.8rem;
+      &.end {
+        font-size: $F-size;
+        width: 142px;
+      }
+    }
+    .btn-cancel+.btn-primary {
+      margin-left: 7px;
+    }
+
+  }
 }
 .study_step {
   margin: 45px auto;
@@ -9,11 +25,13 @@
   &.step1 {
     @include use-sprite(study_step1);
   }
+  &.step2 {
+    @include use-sprite(study_step2);
+  }
 }
 .study {
   background: $C-white;
   padding: 40px 0 60px;
-  margin-bottom: 80px;
   @include clear();
   &__agreement {
     border-bottom: 1px solid #ccc;
@@ -35,6 +53,48 @@
   &__info {
     //border-bottom: 1px solid #ccc;
     padding-bottom: 40px;
+  }
+  &__info-div {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    margin-top: 25px;
+    padding: 15px 0;
+    .form__label {
+      padding-top: 15px;
+    }
+  }
+  &__apply-plus {
+    margin: 20px 0;
+    display: block;
+    clear:both;
+  }
+  &__info-title {
+    @include clear();
+    margin-top: -10px;
+    border-top: 2px solid $C-font-dark;
+    border-bottom: 1px solid #d5dcdc;
+    padding: 15px 0 17px;
+
+  }
+  &__apply-end {
+    text-align:center;
+  }
+  &__applyend-icon {
+    margin-top: 10px;
+    @include use-sprite(ico_apply-end);
+  }
+  &__applyend-message {
+    margin-top: 40px;
+    font-size: 2.4rem;
+    color: $C-font-dark;
+    font-weight: $F-weight-bold;
+
+  }
+  &__applyend-message2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: $C-font-dark;
   }
   .form__check-wrap {
     padding-bottom: 20px;
@@ -93,7 +153,6 @@
     position: absolute;
     pointer-events: none;
   }
-
   .arrow_box:after {
     border-color: rgba(255, 255, 255, 0);
     border-right-color: #ffffff;

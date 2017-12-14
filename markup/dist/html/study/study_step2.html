@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- start: HEAD -->
+<head>
+    <title>NEUROGAZER(home) : 연구참여_step2:연구참여</title>
+    <!-- start: META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- end: META -->
+    <link rel="stylesheet" href="../../assets/css/neurogazer.css"/>
+
+</head>
+<!-- end: HEAD -->
+<body>
+<div class="wrap login">
+    <!-- header_area -->
+    <div class="top_area">
+    <div class="header">
+        <h1 class="logo">
+            <a href="#" class="logo__link">
+                <span class="g_invisible">neurogazer</span>
+            </a>
+        </h1>
+        <div class="menu">
+            <ul class="menu__area">
+                <!-- 해당메뉴에서는 active 클래스를 추가해 줍니다 -->
+                <li class="menu__item active"><a href="../home/01_about.html" class="menu__link">ABOUT US</a></li>
+                <li class="menu__item"><a href="../home/02_service.html" class="menu__link">SERVICE</a></li>
+                <li class="menu__item"><a href="../home/03_science.html" class="menu__link">SCIENCE</a></li>
+                <li class="menu__item"><a href="../home/04_contactus.html" class="menu__link">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="log_info">
+            <a href="#" class="top_link">1:1 문의</a>
+            <a href="#" class="top_link">진행현황</a>
+            <a href="#" class="top_link">연구안내</a>
+            <a href="#" class="top_link">로그아웃</a>
+            <a href="#" class="btn_study_apply">연구참여</a>
+        </div>
+    </div>
+</div>
+
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <div class="study_wrap">
+                <div class="study_step step2">
+                    <span class="g_invisible">step2:연구참여</span>
+                </div>
+
+                <div class="study">
+                    <div class="study__box">
+                        <div class="title_wrap">
+                            <h2 class="heading_h1">연구참여</h2>
+                            <p class="heading_sub">연구 참여 대상자 정보를 입력하세요.</p>
+                        </div>
+
+                        <div class="study__info">
+                            <div class="form-group">
+                                <label class="form-sgroup">
+                                    <p class="form__label">이름 <span class="required">(필수)</span></p>
+                                    <span class="form-inline"><input type="text" class="form__input" style="width: 565px" placeholder="이름"/></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-sgroup">
+                                    <p class="form__label">생년월일 <span class="required">(필수)</span></p>
+                                    <span class="form-inline"><input type="text" class="form__input" style="width: 565px" placeholder="예 : 090202"/></span>
+                                </label>
+                                <a href="#" class="help_link"><span class="g_invisible">도움말</span></a>
+                                <div class="arrow_box" style="top:45px">
+                                    생년월일 여섯자리<br>
+                                    숫자로만 입력해 주세요
+                                </div>
+                            </div>
+
+                            <div class="form-group study__info-div">
+                                <div class="form-sgroup">
+                                    <div class="form-inline">
+                                        <span class="form__label">예약자와의 관계</span>
+                                    </div>
+                                    <div class="form-inline ml30">
+                                        <div class="form__select_box mt15">
+                                            <input type="radio" class="g_invisible" id="son" name="children"/>
+                                            <label class="form__input-radio" for="son">자</label>
+                                        </div>
+                                    </div>
+                                    <span class="form-inline select  ml20">
+                                        <select  class="form__select" style="width:145px;">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                    <div class="form-inline" style="margin-left: 45px;">
+                                        <div class="form__select_box mt15">
+                                            <input type="radio" class="g_invisible" id="daughter" name="children"/>
+                                            <label class="form__input-radio" for="daughter">녀</label>
+                                        </div>
+                                    </div>
+                                    <span class="form-inline select  ml20">
+                                        <select  class="form__select" style="width:145px;">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="study__apply-plus">
+                                <a href="#" class="btn_apply-plus">검사 대상자 추가</a>
+                            </div>
+                        </div>
+
+                        <div class="study__info">
+                            <div class="study__info-title title_wrap">
+                                <h3 class="heading_h2">추가 대상자 1</h3>
+                                <span class="heading_btn"><a href="#del" class="btn_delete"><span class="g_invisible">닫기</span></a></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-sgroup">
+                                    <p class="form__label">이름 <span class="required">(필수)</span></p>
+                                    <span class="form-inline"><input type="text" class="form__input" style="width: 565px" placeholder="이름"/></span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-sgroup">
+                                    <p class="form__label">생년월일 <span class="required">(필수)</span></p>
+                                    <span class="form-inline"><input type="text" class="form__input" style="width: 565px" placeholder="예 : 090202"/></span>
+                                </label>
+                                <a href="#" class="help_link"><span class="g_invisible">도움말</span></a>
+                                <div class="arrow_box" style="top:45px;display: none">
+                                    생년월일 여섯자리<br>
+                                    숫자로만 입력해 주세요
+                                </div>
+
+                            </div>
+
+                            <div class="form-group study__info-div">
+                                <div class="form-sgroup">
+                                    <div class="form-inline">
+                                        <span class="form__label">예약자와의 관계</span>
+                                    </div>
+                                    <div class="form-inline ml30">
+                                        <div class="form__select_box mt15">
+                                            <input type="radio" class="g_invisible" id="son" name="children"/>
+                                            <label class="form__input-radio" for="son">자</label>
+                                        </div>
+                                    </div>
+                                    <span class="form-inline select  ml20">
+                                        <select  class="form__select" style="width:145px;">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                    <div class="form-inline" style="margin-left: 45px;">
+                                        <div class="form__select_box mt15">
+                                            <input type="radio" class="g_invisible" id="daughter" name="children"/>
+                                            <label class="form__input-radio" for="daughter">녀</label>
+                                        </div>
+                                    </div>
+                                    <span class="form-inline select  ml20">
+                                        <select  class="form__select" style="width:145px;">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="study__apply-plus">
+                                <a href="#" class="btn_apply-plus">검사 대상자 추가</a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="btn_wrap al_c">
+                    <input class="btn btn-cancel" type="button" value="취소">
+                    <input class="btn btn-primary" type="submit" value="결제">
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    <div class="footer">
+    <div class="foot_copy">
+        <span class="foot_copy-text">Copyright © NEUROGAZER Inc. 2017. All right reserved</span>
+    </div>
+</div>
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

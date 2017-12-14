@@ -315,7 +315,12 @@ i, cite, em, var, address, dfn {
 	}
 
 }
-
+.float_l {
+	float:left;
+}
+.float_r {
+	float:right;
+}
 /* 페이지 그리드 */
 .col-md-1{width:8.33333333%}
 .col-md-2{width:16.66666667%}
@@ -336,8 +341,26 @@ i, cite, em, var, address, dfn {
 .mt10 {
 	margin-top: 10px !important;
 }
+.mt15 {
+	margin-top: 15px !important;
+}
 .mt30 {
 	margin-top: 30px !important;
+}
+.mt50 {
+	margin-top: 50px !important;
+}
+.ml10 {
+	margin-left: 10px !important;
+}
+.ml20 {
+	margin-left: 20px !important;
+}
+.ml30 {
+	margin-left: 30px !important;
+}
+.ml70 {
+	margin-left: 70px !important;
 }
 
 .al_c {

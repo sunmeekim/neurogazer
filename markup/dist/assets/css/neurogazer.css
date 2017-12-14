@@ -383,6 +383,14 @@ i, cite, em, var, address, dfn {
   content: "\f110";
 }
 
+.float_l {
+  float: left;
+}
+
+.float_r {
+  float: right;
+}
+
 /* 페이지 그리드 */
 .col-md-1 {
   width: 8.33333333%;
@@ -440,8 +448,32 @@ i, cite, em, var, address, dfn {
   margin-top: 10px !important;
 }
 
+.mt15 {
+  margin-top: 15px !important;
+}
+
 .mt30 {
   margin-top: 30px !important;
+}
+
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.ml20 {
+  margin-left: 20px !important;
+}
+
+.ml30 {
+  margin-left: 30px !important;
+}
+
+.ml70 {
+  margin-left: 70px !important;
 }
 
 .al_c {
@@ -545,7 +577,7 @@ i, cite, em, var, address, dfn {
 .header .logo__link {
   width: 137px;
   height: 24px;
-  background-position: -1203px -78px;
+  background-position: -1070px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -795,7 +827,7 @@ i, cite, em, var, address, dfn {
 .footer .foot_area .foot_copy:after {
   width: 117px;
   height: 20px;
-  background-position: -971px -121px;
+  background-position: -1211px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -959,7 +991,7 @@ i, cite, em, var, address, dfn {
 .form-group .form__check-label:before {
   width: 26px;
   height: 26px;
-  background-position: -1009px -145px;
+  background-position: -906px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -994,7 +1026,7 @@ i, cite, em, var, address, dfn {
 .form-group .form__input-radio:before {
   width: 17px;
   height: 17px;
-  background-position: -1167px -145px;
+  background-position: -901px -237px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1017,7 +1049,7 @@ i, cite, em, var, address, dfn {
 .form-group .form__checkbox input[type="checkbox"]:checked + .form__check-label:after {
   width: 26px;
   height: 26px;
-  background-position: -1039px -145px;
+  background-position: -876px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1029,7 +1061,7 @@ i, cite, em, var, address, dfn {
 .form-group .form__select_box input[type="radio"]:checked + .form__input-radio:after {
   width: 17px;
   height: 17px;
-  background-position: -1125px -145px;
+  background-position: -922px -237px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1096,7 +1128,7 @@ i, cite, em, var, address, dfn {
   z-index: 2;
   width: 7px;
   height: 4px;
-  background-position: -1264px -106px;
+  background-position: -1139px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1198,7 +1230,7 @@ i, cite, em, var, address, dfn {
 .btn_study_apply:after {
   width: 7px;
   height: 8px;
-  background-position: -1253px -106px;
+  background-position: -1120px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1233,7 +1265,7 @@ i, cite, em, var, address, dfn {
 .btn_send:after {
   width: 4px;
   height: 7px;
-  background-position: -1239px -121px;
+  background-position: -1131px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1261,7 +1293,7 @@ i, cite, em, var, address, dfn {
 .btn_apply:before {
   width: 8px;
   height: 8px;
-  background-position: -1241px -106px;
+  background-position: -1108px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1269,6 +1301,45 @@ i, cite, em, var, address, dfn {
   background-repeat: no-repeat;
   content: '';
   margin-right: 3px;
+}
+
+.btn_apply-plus {
+  display: block;
+  height: 55px;
+  background: #f0f1f1;
+  border: 1px solid #d5dcdc;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 55px;
+  color: #242424;
+  font-size: 1.4rem;
+}
+
+.btn_apply-plus:before {
+  width: 26px;
+  height: 26px;
+  background-position: -936px -199px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -3px;
+}
+
+.btn_delete {
+  width: 17px;
+  height: 17px;
+  background-position: -859px -237px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
 }
 
 .btn_wrap {
@@ -1333,6 +1404,12 @@ i, cite, em, var, address, dfn {
   float: right;
 }
 
+.title_wrap .heading_sub {
+  margin: 5px 0 0 3px;
+  color: #888;
+  font-size: 1.3rem;
+}
+
 .box_tit {
   height: 52px;
   background: #f5f6f6;
@@ -1349,7 +1426,7 @@ i, cite, em, var, address, dfn {
 .box_tit .heading_h3:before {
   width: 24px;
   height: 24px;
-  background-position: -1344px -78px;
+  background-position: -995px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1404,6 +1481,11 @@ i, cite, em, var, address, dfn {
   float: right;
 }
 
+.table_wrap .table_sgroup .table_name {
+  font-size: 1.7rem;
+  color: #242424;
+}
+
 .table_wrap .table_sgroup:before, .table_wrap .table_sgroup:after {
   display: table;
   content: "";
@@ -1443,6 +1525,34 @@ i, cite, em, var, address, dfn {
 .table_wrap .table-block .tbl__block .arrow_box {
   margin-top: 8px;
   font-size: 1.1rem;
+}
+
+.table_wrap .table-block .tbl2 {
+  width: 100%;
+  table-layout: fixed;
+  border-top: 2px solid #242424;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.table_wrap .table-block .tbl2__th {
+  background: #f5f6f6;
+  font-weight: 700;
+  border-bottom: 1px solid #e7e7e7;
+  text-align: left;
+  padding-left: 45px;
+}
+
+.table_wrap .table-block .tbl2__td {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 20px 0 20px 50px;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #454545;
+}
+
+.table_wrap .table-block .tbl2 .tbl2_td:last-child,
+.table_wrap .table-block .tbl2 .tbl2_th:last-child {
+  border-bottom: 2px solid #eee;
 }
 
 .panel__header:before, .panel__header:after, .panel__body:before, .panel__body:after {
@@ -1583,7 +1693,7 @@ i, cite, em, var, address, dfn {
   vertical-align: middle;
   width: 6px;
   height: 9px;
-  background-position: -1229px -121px;
+  background-position: -1137px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1601,7 +1711,7 @@ i, cite, em, var, address, dfn {
   vertical-align: middle;
   width: 6px;
   height: 9px;
-  background-position: -1219px -121px;
+  background-position: -1127px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1640,7 +1750,7 @@ i, cite, em, var, address, dfn {
 .spot_area .spot1__info-logo {
   width: 228px;
   height: 39px;
-  background-position: -971px -78px;
+  background-position: -838px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1667,7 +1777,7 @@ i, cite, em, var, address, dfn {
 .cont1:before {
   width: 152px;
   height: 221px;
-  background-position: -419px -78px;
+  background-position: -419px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1771,7 +1881,7 @@ i, cite, em, var, address, dfn {
 .cont3__team1 .cont3__team1-area:after {
   width: 129px;
   height: 152px;
-  background-position: -575px -78px;
+  background-position: 0 -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -1964,7 +2074,7 @@ i, cite, em, var, address, dfn {
   top: -125px;
   width: 103px;
   height: 103px;
-  background-position: -864px -78px;
+  background-position: -731px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2112,7 +2222,7 @@ i, cite, em, var, address, dfn {
 .service_cont1:before {
   width: 50px;
   height: 146px;
-  background-position: 0 -419px;
+  background-position: -133px -419px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2169,7 +2279,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -1124px -121px;
+  background-position: -1364px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2184,7 +2294,7 @@ i, cite, em, var, address, dfn {
 .service_cont1__info .service_cont1__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -1092px -121px;
+  background-position: -1332px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2236,7 +2346,7 @@ i, cite, em, var, address, dfn {
 .service_cont3:before {
   width: 152px;
   height: 221px;
-  background-position: -419px -78px;
+  background-position: -419px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2291,7 +2401,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -1124px -121px;
+  background-position: -1364px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2306,7 +2416,7 @@ i, cite, em, var, address, dfn {
 .service_cont3__info .service_cont3__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -1092px -121px;
+  background-position: -1332px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2438,7 +2548,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -1124px -121px;
+  background-position: -1364px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2453,7 +2563,7 @@ i, cite, em, var, address, dfn {
 .service_cont4__info .service_cont4__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -1092px -121px;
+  background-position: -1332px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2543,7 +2653,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:before {
   width: 28px;
   height: 16px;
-  background-position: -1124px -121px;
+  background-position: -1364px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2558,7 +2668,7 @@ i, cite, em, var, address, dfn {
 .service_cont5__info .service_cont5__tit:after {
   width: 28px;
   height: 16px;
-  background-position: -1092px -121px;
+  background-position: -1332px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2625,7 +2735,7 @@ i, cite, em, var, address, dfn {
 .science_cont1:before {
   width: 152px;
   height: 129px;
-  background-position: -708px -78px;
+  background-position: -575px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -2724,7 +2834,7 @@ i, cite, em, var, address, dfn {
 .science_cont3:before {
   width: 152px;
   height: 221px;
-  background-position: -419px -78px;
+  background-position: -419px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3055,7 +3165,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-facebook:before {
   width: 9px;
   height: 17px;
-  background-position: -1399px -78px;
+  background-position: -943px -237px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3067,7 +3177,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-twitter:before {
   width: 19px;
   height: 15px;
-  background-position: -1183px -121px;
+  background-position: -1104px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3080,7 +3190,7 @@ i, cite, em, var, address, dfn {
 .contact__sns-youtube:before {
   width: 23px;
   height: 16px;
-  background-position: -1156px -121px;
+  background-position: -1077px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3192,7 +3302,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__title:before {
   width: 34px;
   height: 34px;
-  background-position: -971px -145px;
+  background-position: -838px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3267,7 +3377,7 @@ i, cite, em, var, address, dfn {
 .login_wrap .login__id-save:before {
   width: 17px;
   height: 17px;
-  background-position: -1146px -145px;
+  background-position: -880px -237px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3340,7 +3450,7 @@ label.error {
 .login__option input[type="checkbox"]:checked + .login__id-save:after {
   width: 17px;
   height: 17px;
-  background-position: -1188px -145px;
+  background-position: -838px -237px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3395,7 +3505,7 @@ label.error {
 .find_wrap .find__input-phone:before {
   width: 23px;
   height: 23px;
-  background-position: -1098px -145px;
+  background-position: -1023px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3501,7 +3611,7 @@ label.error {
   z-index: 2;
   width: 7px;
   height: 4px;
-  background-position: -1264px -106px;
+  background-position: -1139px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3580,7 +3690,7 @@ label.error {
 .find_wrap .find__ok-message:before {
   width: 85px;
   height: 85px;
-  background-position: -419px -303px;
+  background-position: -664px -289px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3659,7 +3769,7 @@ label.error {
 .find__result-email input[type="radio"]:checked + .find__input-phone:after {
   width: 23px;
   height: 23px;
-  background-position: -1372px -78px;
+  background-position: -1050px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3743,7 +3853,7 @@ label.error {
 .inquire .ico_arrow {
   width: 15px;
   height: 9px;
-  background-position: -1203px -106px;
+  background-position: -1070px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3763,7 +3873,7 @@ label.error {
 .view .ico_arrow {
   width: 15px;
   height: 9px;
-  background-position: -1222px -106px;
+  background-position: -1089px -184px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3818,12 +3928,40 @@ label.error {
   margin: 0 auto;
 }
 
+.study_wrap .btn_wrap .btn {
+  width: 104px;
+  height: 52px;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.study_wrap .btn_wrap .btn.end {
+  font-size: 1.4rem;
+  width: 142px;
+}
+
+.study_wrap .btn_wrap .btn-cancel + .btn-primary {
+  margin-left: 7px;
+}
+
 .study_step {
   margin: 45px auto;
   height: 74px;
 }
 
 .study_step.step1 {
+  width: 989px;
+  height: 74px;
+  background-position: -419px -78px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.study_step.step2 {
   width: 989px;
   height: 74px;
   background-position: -419px 0;
@@ -3838,7 +3976,6 @@ label.error {
 .study {
   background: #fff;
   padding: 40px 0 60px;
-  margin-bottom: 80px;
 }
 
 .study:before, .study:after {
@@ -3874,6 +4011,70 @@ label.error {
   padding-bottom: 40px;
 }
 
+.study__info-div {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  margin-top: 25px;
+  padding: 15px 0;
+}
+
+.study__info-div .form__label {
+  padding-top: 15px;
+}
+
+.study__apply-plus {
+  margin: 20px 0;
+  display: block;
+  clear: both;
+}
+
+.study__info-title {
+  margin-top: -10px;
+  border-top: 2px solid #242424;
+  border-bottom: 1px solid #d5dcdc;
+  padding: 15px 0 17px;
+}
+
+.study__info-title:before, .study__info-title:after {
+  display: table;
+  content: "";
+}
+
+.study__info-title:after {
+  clear: both;
+}
+
+.study__apply-end {
+  text-align: center;
+}
+
+.study__applyend-icon {
+  margin-top: 10px;
+  width: 85px;
+  height: 85px;
+  background-position: -575px -289px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -999px;
+  background-image: url("../images/spr_img/spr_img.png");
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.study__applyend-message {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  color: #242424;
+  font-weight: 700;
+}
+
+.study__applyend-message2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #242424;
+}
+
 .study .form__check-wrap {
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
@@ -3900,7 +4101,7 @@ label.error {
 .study .agreement-view .agree_link:after {
   width: 9px;
   height: 14px;
-  background-position: -1206px -121px;
+  background-position: -1396px -156px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3918,7 +4119,7 @@ label.error {
 .study .help_link {
   width: 25px;
   height: 25px;
-  background-position: -1069px -145px;
+  background-position: -966px -199px;
   overflow: hidden;
   display: inline-block;
   text-indent: -999px;
@@ -3972,7 +4173,7 @@ label.error {
   .header .logo__link {
     width: 137px;
     height: 24px;
-    background-position: -1191px -76px;
+    background-position: -1060px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -3984,7 +4185,7 @@ label.error {
   .footer .foot_area .foot_copy:after {
     width: 117px;
     height: 20px;
-    background-position: -961px -117px;
+    background-position: -1199px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -3996,7 +4197,7 @@ label.error {
   .form-group .form__check-label:before {
     width: 26px;
     height: 26px;
-    background-position: -997px -139px;
+    background-position: -894px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4008,7 +4209,7 @@ label.error {
   .form-group .form__input-radio:before {
     width: 17px;
     height: 17px;
-    background-position: -1118px -139px;
+    background-position: -1072px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4020,7 +4221,7 @@ label.error {
   .form-group .form__checkbox input[type="checkbox"]:checked + .form__check-label:after {
     width: 26px;
     height: 26px;
-    background-position: -1025px -139px;
+    background-position: -866px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4032,7 +4233,7 @@ label.error {
   .form-group .form__select_box input[type="radio"]:checked + .form__input-radio:after {
     width: 17px;
     height: 17px;
-    background-position: -1080px -139px;
+    background-position: -1129px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4044,7 +4245,7 @@ label.error {
   .form-group .form-inline.select:after {
     width: 14px;
     height: 8px;
-    background-position: -1225px -102px;
+    background-position: -1094px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4056,7 +4257,7 @@ label.error {
   .btn_study_apply:after {
     width: 7px;
     height: 8px;
-    background-position: -1251px -102px;
+    background-position: -1120px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4068,7 +4269,7 @@ label.error {
   .btn_send:after {
     width: 4px;
     height: 7px;
-    background-position: -1260px -102px;
+    background-position: -1129px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4080,7 +4281,31 @@ label.error {
   .btn_apply:before {
     width: 8px;
     height: 8px;
-    background-position: -1241px -102px;
+    background-position: -1110px -178px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .btn_apply-plus:before {
+    width: 26px;
+    height: 26px;
+    background-position: -922px -193px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .btn_delete {
+    width: 17px;
+    height: 17px;
+    background-position: -1110px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4092,7 +4317,7 @@ label.error {
   .box_tit .heading_h3:before {
     width: 24px;
     height: 24px;
-    background-position: -1330px -76px;
+    background-position: -977px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4104,7 +4329,7 @@ label.error {
   .pagenate .prev_link:before {
     width: 6px;
     height: 9px;
-    background-position: -1205px -117px;
+    background-position: -1188px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4116,7 +4341,7 @@ label.error {
   .pagenate .next_link:after {
     width: 6px;
     height: 9px;
-    background-position: -1197px -117px;
+    background-position: -1180px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4140,7 +4365,7 @@ label.error {
   .spot_area .spot1__info-logo {
     width: 228px;
     height: 39px;
-    background-position: -961px -76px;
+    background-position: -830px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4152,7 +4377,7 @@ label.error {
   .cont1:before {
     width: 152px;
     height: 221px;
-    background-position: -417px -76px;
+    background-position: -417px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4176,7 +4401,7 @@ label.error {
   .cont3__team1 .cont3__team1-area:after {
     width: 129px;
     height: 152px;
-    background-position: -571px -76px;
+    background-position: 0 -417px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4200,7 +4425,7 @@ label.error {
   .cont4__area:after {
     width: 103px;
     height: 103px;
-    background-position: -856px -76px;
+    background-position: -725px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4224,7 +4449,7 @@ label.error {
   .service_cont1:before {
     width: 50px;
     height: 146px;
-    background-position: 0 -417px;
+    background-position: -131px -417px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4236,7 +4461,7 @@ label.error {
   .service_cont1__info .service_cont1__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -1110px -117px;
+    background-position: -1348px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4248,7 +4473,7 @@ label.error {
   .service_cont1__info .service_cont1__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -1080px -117px;
+    background-position: -1318px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4272,7 +4497,7 @@ label.error {
   .service_cont3:before {
     width: 152px;
     height: 221px;
-    background-position: -417px -76px;
+    background-position: -417px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4284,7 +4509,7 @@ label.error {
   .service_cont3__info .service_cont3__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -1110px -117px;
+    background-position: -1348px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4296,7 +4521,7 @@ label.error {
   .service_cont3__info .service_cont3__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -1080px -117px;
+    background-position: -1318px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4308,7 +4533,7 @@ label.error {
   .service_cont4__info .service_cont4__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -1110px -117px;
+    background-position: -1348px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4320,7 +4545,7 @@ label.error {
   .service_cont4__info .service_cont4__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -1080px -117px;
+    background-position: -1318px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4344,7 +4569,7 @@ label.error {
   .service_cont5__info .service_cont5__tit:before {
     width: 28px;
     height: 16px;
-    background-position: -1110px -117px;
+    background-position: -1348px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4356,7 +4581,7 @@ label.error {
   .service_cont5__info .service_cont5__tit:after {
     width: 28px;
     height: 16px;
-    background-position: -1080px -117px;
+    background-position: -1318px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4380,7 +4605,7 @@ label.error {
   .science_cont1:before {
     width: 152px;
     height: 129px;
-    background-position: -702px -76px;
+    background-position: -571px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4404,7 +4629,7 @@ label.error {
   .science_cont3:before {
     width: 152px;
     height: 221px;
-    background-position: -417px -76px;
+    background-position: -417px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4416,7 +4641,7 @@ label.error {
   .contact__sns-facebook:before {
     width: 9px;
     height: 17px;
-    background-position: -1156px -139px;
+    background-position: -830px -229px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4428,7 +4653,7 @@ label.error {
   .contact__sns-twitter:before {
     width: 19px;
     height: 15px;
-    background-position: -1165px -117px;
+    background-position: -1148px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4440,7 +4665,7 @@ label.error {
   .contact__sns-youtube:before {
     width: 23px;
     height: 16px;
-    background-position: -1140px -117px;
+    background-position: -1378px -152px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4452,7 +4677,7 @@ label.error {
   .login_wrap .login__title:before {
     width: 34px;
     height: 34px;
-    background-position: -961px -139px;
+    background-position: -830px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4464,7 +4689,7 @@ label.error {
   .login_wrap .login__id-save:before {
     width: 17px;
     height: 17px;
-    background-position: -1099px -139px;
+    background-position: -1091px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4476,7 +4701,7 @@ label.error {
   .login__option input[type="checkbox"]:checked + .login__id-save:after {
     width: 17px;
     height: 17px;
-    background-position: -1137px -139px;
+    background-position: -1053px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4488,7 +4713,7 @@ label.error {
   .find_wrap .find__input-phone:before {
     width: 23px;
     height: 23px;
-    background-position: -1381px -76px;
+    background-position: -1003px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4500,7 +4725,7 @@ label.error {
   .find_wrap .find__form-inline.select:after {
     width: 14px;
     height: 8px;
-    background-position: -1225px -102px;
+    background-position: -1094px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4512,7 +4737,7 @@ label.error {
   .find_wrap .find__ok-message:before {
     width: 85px;
     height: 85px;
-    background-position: -417px -299px;
+    background-position: -658px -283px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4525,7 +4750,7 @@ label.error {
   .find__result-email input[type="radio"]:checked + .find__input-phone:after {
     width: 23px;
     height: 23px;
-    background-position: -1356px -76px;
+    background-position: -1028px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4537,7 +4762,7 @@ label.error {
   .inquire .ico_arrow {
     width: 15px;
     height: 9px;
-    background-position: -1191px -102px;
+    background-position: -1077px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4549,7 +4774,7 @@ label.error {
   .view .ico_arrow {
     width: 15px;
     height: 9px;
-    background-position: -1208px -102px;
+    background-position: -1060px -178px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4561,7 +4786,31 @@ label.error {
   .study_step.step1 {
     width: 989px;
     height: 74px;
+    background-position: -417px -76px;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .study_step.step2 {
+    width: 989px;
+    height: 74px;
     background-position: -417px 0;
+    background-size: 1406px auto;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -999px;
+    background-image: url("../images/spr_img/spr_img_2x.png");
+    background-repeat: no-repeat;
+    content: '';
+  }
+  .study__applyend-icon {
+    width: 85px;
+    height: 85px;
+    background-position: -571px -283px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4573,7 +4822,7 @@ label.error {
   .study .agreement-view .agree_link:after {
     width: 9px;
     height: 14px;
-    background-position: -1186px -117px;
+    background-position: -1169px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;
@@ -4585,7 +4834,7 @@ label.error {
   .study .help_link {
     width: 25px;
     height: 25px;
-    background-position: -1053px -139px;
+    background-position: -950px -193px;
     background-size: 1406px auto;
     overflow: hidden;
     display: inline-block;

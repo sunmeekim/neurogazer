@@ -8,6 +8,10 @@
     .table_btn {
       float:right;
     }
+    .table_name {
+      font-size:1.7rem;
+      color: $C-font-dark;
+    }
     @include clear()
   }
   .table-block{
@@ -35,6 +39,36 @@
           margin-top: 8px;
           font-size: $F-size-xsmall;
         }
+      }
+    }
+    .tbl2 {
+      width: 100%;
+      table-layout: fixed;
+      border-top: 2px solid $C-font-dark;
+      border-bottom: 1px solid #e7e7e7;
+
+
+
+      &__th {
+        background: #f5f6f6;
+        font-weight: $F-weight-bold;
+        border-bottom: 1px solid #e7e7e7;
+        text-align: left;
+        padding-left: 45px;
+
+      }
+      &__td {
+        border-bottom: 1px solid #e7e7e7;
+        padding: 20px 0 20px 50px;
+        text-align: left;
+        font-size: $F-size;
+        color:#454545;
+      }
+
+
+      .tbl2_td:last-child,
+      .tbl2_th:last-child {
+        border-bottom: 2px solid #eee;
       }
     }
   }
