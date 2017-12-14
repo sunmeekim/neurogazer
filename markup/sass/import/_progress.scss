@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.progress {
+  border-top: 1px solid #eff5f5;
+  padding: 40px;
+  background: $C-white;
+}
+.summary {
+  background: $C-white;
+  margin-top: 30px;
+  .sum_txt{
+    padding: 30px;
+    color: #454545;
+    font-size: $F-size-under;
+    line-height: 1.5;
+    p+p {
+      margin-top: 20px;
+    }
+    strong {
+      font-weight: $F-weight-bold;
+    }
+  }
+
+}

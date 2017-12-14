@@ -18,6 +18,7 @@ $base-line-height: 1.3;
 $F-family-en: 'Open Sans', sans-serif !important;
 $F-family-en2: 'Noto Sans', sans-serif !important;
 $F-family-number: 'Barlow', sans-serif !important;
+$F-family-login: 'Nanum Square', sans-serif !important;
 // Font Style
 //$F-family-xbold: 'SKBRixHeadEB', sans-serif-black !important;
 //$F-family-bold: 'SKBRixHeadB', sans-serif-medium !important;
@@ -47,6 +48,9 @@ $C-brand-point: #3779de; //포인트 블루
 $C-brand-point2: #0068b7;//포인트 짙은블루
 $C-primary: #5674d7; //primary
 $C-red-point: #f1504a;//빨간색 포인트
+$C-cont-bg:#f6f6f8; //전체 bg 회색
+$C-menu-line:#a0a0a0; //메뉴라인컬러
+$C-error: #ff0000; // 에러컬러
 
 // Font color
 $C-font-basic: #888; //기본 폰트컬러

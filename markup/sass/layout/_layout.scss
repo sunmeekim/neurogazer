@@ -5,6 +5,13 @@
   min-height:$G-contents-fit;
   position: relative;
   padding-bottom: 408px;
+  &.other,
+  &.login {
+    background: $C-cont-bg;
+  }
+  &.login {
+    padding-bottom: 48px;
+  }
 }
 .header {
   position: relative;
@@ -57,33 +64,70 @@
     position: absolute;
     right: 30px;
     top: 24px;
-    .member_link {
-      color: $C-font-dark-gray2;
+
+    .top_link {
+      color: $C-font-light2;
       font-weight: $F-weight-bold;
       line-height: 32px;
-    }
-    .btn_study_apply {
-      display: inline-block;
-      vertical-align: top;
-      width: 88px;
-      height:34px;
-      margin-left: 20px;
-      border: 1px solid $C-brand-point2;
-      border-radius: 3px;
-      line-height:32px;
-      text-align: center;
-      color: $C-white;
-      font-size: $F-size;
-      background: $C-brand-point;
+      font-size: $F-size-under;
+      &:hover {
+        color: $C-font-dark-gray;
+      }
+      &+.top_link {
+        &:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 3px;
+          height: 3px;
+          margin: 0 8px 0 5px;
+          background: $C-font-light2;
 
+        }
+      }
+    }
+
+  }
+}
+.other {
+  .top_area {
+    background: $C-white;
+    width: $G-contents-fit;
+    border-bottom: 1px solid $C-menu-line;
+  }
+
+}
+.login {
+  .top_area {
+    background: $C-white;
+    width: $G-contents-fit;
+    border-bottom: 1px solid $C-menu-line;
+  }
+  .footer {
+    background: #eef0f1;
+    .foot_copy {
+      text-align: center;
+      color: #555;
+      font-size: $F-size-small;
+      font-family: $F-family-en2;
+      padding: 20px 0 50px;
       &:after {
-        @include use-sprite(arrow_right);
-        margin-left: 8px;
+        display: none;
+      }
+      .foot_copy-text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3px;
       }
     }
   }
-}
 
+}
+.contents {
+  width : 990px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
 .footer {
   position: absolute;
   left: 0;
@@ -95,7 +139,7 @@
     border-width: 1px 0;
     margin: 0 auto;
     text-align: center;
-
+    background: $C-white;
 
     &__area {
       margin: 0 auto;

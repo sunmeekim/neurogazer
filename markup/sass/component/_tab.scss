@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.tab {
+  &__list {
+    @include clear();
+    &.two_end {
+      .tab__item {
+        width: 50%;
+      }
+    }
+  }
+  &__list &__item {
+    float:left;
+    text-align: center;
+    &.active {
+      .tab__link {
+        background: #2b2b2b;
+        color: $C-white;
+      }
+    }
+  }
+  &__list &__link {
+    color: $C-font-basic;
+    font-size: 1.8rem;
+    display: block;
+    height: 52px;
+    background: $C-white;
+    line-height: 52px;
+    font-weight: $F-weight-bold;
+  }
+
+}

@@ -1,0 +1,122 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 진행현황","filePath": "../"})
+<body>
+<div class="wrap other">
+    <!-- header_area -->
+    @@include('top.html')
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <h2 class="title"><span class="heading_h1">진행현황</span></h2>
+
+            <div class="progress">
+                <div class="table_wrap">
+                    <div class="table_sgroup">
+                        <div class="table_total">총 <span>3</span>건</div>
+                        <div class="table_btn">
+                            <a href="#" class="btn_apply">연구자 참여 추가</a>
+                        </div>
+                    </div>
+                    <div class="table-block">
+                        <table class="tbl">
+                            <caption><span class="g_invisible">진행현황 표</span></caption>
+                            <colgroup>
+                                <col width="215"/>
+                                <col width="240"/>
+                                <col width="210"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th class="tbl__th">연구참여자 번호</th>
+                                <th class="tbl__th">이름</th>
+                                <th class="tbl__th">진행상태</th>
+                                <th class="tbl__th">변경/취소</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="tbl__link">NG1706069</a>
+                                </td>
+                                <td class="tbl__td al_c">홍길동 ( 1남, 14세 ) </td>
+                                <td class="tbl__td al_c">
+                                    <div class="tbl__block">
+                                        설문 진행중
+                                        <div class="arrow_box">MRI 촬영전까지 설문을 완료해 주십시오</div>
+                                    </div>
+                                </td>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="btn btn-thin">설문수정</a>
+                                    <a href="#" class="btn btn-thin-blue">설문계속</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="tbl__link">NG1706069</a>
+                                </td>
+                                <td class="tbl__td al_c">홍길동 ( 1남, 14세 ) </td>
+                                <td class="tbl__td al_c">
+                                    <div class="tbl__block">
+                                        설문 대기중
+                                        <div class="arrow_box" style="display: none">MRI 촬영전까지 설문을 완료해 주십시오</div>
+                                    </div>
+                                </td>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="btn btn-thin-blue">설문시작</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="tbl__link">NG1706069</a>
+                                </td>
+                                <td class="tbl__td al_c">홍길동 ( 1남, 14세 ) </td>
+                                <td class="tbl__td al_c">
+                                    <div class="tbl__block">
+                                        설문 완료
+                                        <div class="arrow_box" style="display: none">MRI 촬영전까지 설문을 완료해 주십시오</div>
+                                    </div>
+                                </td>
+                                <td class="tbl__td al_c">
+                                    <a href="#" class="btn btn-thin">설문수정</a>
+                                    <a href="#" class="btn btn-thin-gray">설문완료</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary">
+                <div class="box_tit">
+                    <h3 class="heading_h3"> 알려드립니다.</h3>
+                </div>
+                <div class="sum_txt">
+                    <p>대상자 변경은 ‘예약대기’ 상태에서만 가능합니다.<br>
+                        : 이후 진행되는 설문은 대상자의 성별과 연령에 따라 다를 수 있으며, 검사 준비 과정에서도 성별과 연령 정보는 중요하기 때문입니다.
+                    </p>
+                    <p>
+                        <strong>예약취소</strong><br>
+                        : 예약 당일 이전까지 예약취소가 가능합니다. 예약 당일 이후부터는 취소하실 수 없으니 유의하시기 바랍니다.<br>
+                        : 예약 당일 이후부터는 취소가 불가하며, 서비스 탈퇴를 원하실 경우 모든 검사/분석이 완료된 이후 [ 정보수정 ] 메뉴에서 진행하실 수 있습니다.<br>
+                        : 모든 예약을 해당 예약일 이전에 취소하실 경우에는 자동으로 서비스를 탈퇴하게 됩니다. ( 예약 기록은 관련 법령에 의거 5년간 보관 )
+                    </p>
+                    <p>
+                        <strong>설문 응답</strong><br>
+                        : 검사 대상자의 확정과 검사 병원 및 일정이 확정되면 설문안내 메일이 발송됩니다. ( 휴대전화번호를 등록하신 경우 문자메시지를 통해서도 발송 )
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

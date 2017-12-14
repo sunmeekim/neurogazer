@@ -1,0 +1,49 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 1:1 문의_등록","filePath": "../"})
+<body>
+<div class="wrap other">
+    <!-- header_area -->
+    @@include('top.html')
+    <!-- //header_area -->
+
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <h2 class="title"><span class="heading_h1">1:1 문의내역</span></h2>
+
+            <div class="inquire">
+                <div class="title_wrap">
+                    <h4 class="heading_h2">고객님의 상담 및 문의사항에 대한 해결을 위해 최선을 다하겠습니다.</h4>
+                    <span class="heading_btn">
+                        <a href="#" class="btn btn-thin">1:1 문의내역</a>
+                    </span>
+                </div>
+
+                <div class="inquire__regist">
+                    <div class="form-group">
+                        <label class="form__label" for="inquire_tit">제목 <span class="required">(필수)</span></label>
+                        <input type="text" class="form__input" id="inquire_tit" placeholder="제목"/>
+                    </div>
+                    <div class="form-group  mt10">
+                        <label class="form__label" for="inquire_cont">내용 <span class="required">(필수)</span></label>
+                        <textarea class="form__textarea error" id="inquire_cont" style="height:165px"></textarea>
+                        <label class="error">내용은 필수입니다.</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn_wrap al_c">
+                <input class="btn btn-cancel" type="button" value="취소">
+                <input class="btn btn-primary" type="submit" value="확인">
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>
