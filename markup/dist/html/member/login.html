@@ -55,17 +55,23 @@
             <div class="login_wrap login">
                 <h2 class="login__title">로그인</h2>
                 <div class="login__form">
+                    <!-- 폼영역 -->
+                    <!-- [D]아이디,이메일입력 -->
                     <div class="login__id">
                         <label class="login__label"><input type="text" class="login__input" placeholder="이메일(아이디)" required/></label>
                     </div>
-
+                    <!-- [D]비밀번호입력 -->
                     <div class="login__pw">
                         <label class="login__label"><input type="password" class="login__input error" placeholder="비밀번호" required/></label>
                         <!--<label class="error">비밀번호가 틀렸습니다. 다시 확인하시고 로그인하세요.</label>-->
                     </div>
+                    <!-- //폼영역 -->
+                    <!-- 로그인버튼 -->
                     <div class="login__btn">
                         <input class="login__submit" type="submit" value="로그인">
                     </div>
+                    <!-- //로그인버튼 -->
+
                     <div class="login__option">
                         <input type="checkbox" class="g_invisible" id="id-save" checked/>
                         <label class="login__id-save" for="id-save"><span class="login__option-txt">이메일(아이디)저장</span></label>
@@ -74,6 +80,7 @@
                             <a href="#" class="login__find-link">비밀번호 찾기</a>
                         </span>
                     </div>
+
                     <div class="login__other">
                         <span class="login__other-txt">아직 연구참여를 하지 않으셨나요?</span>
                         <span class="login__other-link"><a href="#" class="btn_study_apply small">연구참여</a></span>

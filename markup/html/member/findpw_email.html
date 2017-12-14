@@ -9,14 +9,18 @@
     <div class="container">
         <div class="contents">
             <div class="find_wrap">
+                <!-- 탭메뉴영역 -->
                 <div class="tab">
                     <ul class="tab__list two_end">
                         <li class="tab__item"><a href="#" class="tab__link">이메일(아이디) 찾기</a></li>
                         <li class="tab__item active"><a href="#" class="tab__link">비밀번호 찾기</a></li>
                     </ul>
                 </div>
+                <!-- //탭메뉴영역 -->
 
                 <div class="find__form">
+                    <!-- 폼영역 -->
+                    <!-- 찾기방법 : 휴대폰 선택시 -->
                     <div class="find__pw-wrap">
                         <div class="find__select_box">
                             <input type="radio" class="g_invisible" id="find-pw-phone" checked/>
@@ -24,11 +28,14 @@
                         </div>
                         <p class="find__id-desc">가입 당시 입력한 휴대전화 번호를 통해 이메일(아이디)를 문자와 함께 확인하세요. </p>
                     </div>
+                    <!-- [D] 휴대폰 찾기 활성화시 보입니다 -->
                     <div class="find__form-box">
+                        <!-- [D] 이름입력 -->
                         <div class="find__form-group">
                             <label class="find__label">이름</label>
                             <input type="text" class="find__input"/>
                         </div>
+                        <!-- [D] 전화번호입력 -->
                         <div class="find__form-group">
                             <label class="find__label">휴대번호 <span class="required">(필수)</span></label>
                             <div class="find__form-sgroup">
@@ -41,6 +48,7 @@
                                 <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
                             </div>
                         </div>
+                        <!-- [D] 인증번호입력 -->
                         <div class="find__form-group mt10">
                             <label class="find__form-sgroup">
                                 <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
@@ -52,6 +60,9 @@
                             <label class="error">입력된 회원정보가 존재하지 않습니다. 비회원일 경우 계정등록 후 이용해주세요.</label>
                         </div>
                     </div>
+                    <!-- //찾기방법 : 휴대폰 선택시 -->
+
+                    <!-- 찾기방법 : 이메일 선택시 -->
                     <div class="find__pw-wrap">
                         <div class="find__select_box">
                             <input type="radio" class="g_invisible" id="find-pw-email"/>
@@ -59,11 +70,14 @@
                         </div>
                         <p class="find__id-desc">가입 당시 입력한 이메일 주소를 통해 아이디를 찾을 수 있습니다</p>
                     </div>
+                    <!-- [D] 이메일 찾기 비활성화시 보입니다 display:none을 넣어줍니다 -->
                     <div class="find__form-box"  style="display: none">
+                        <!-- [D] 이름입력 -->
                         <div class="find__form-group">
                             <label class="find__label">이름</label>
                             <input type="text" class="find__input"/>
                         </div>
+                        <!-- [D] 이메일입력 -->
                         <div class="find__form-group">
                             <label class="find__label">이메일</label>
                             <div class="find__form-sgroup">
@@ -71,6 +85,7 @@
                                 <span class="find__form-inline"><a href="#인증번호" class="btn btn-primary">인증번호</a> </span>
                             </div>
                         </div>
+                        <!-- [D] 인증번호입력 -->
                         <div class="find__form-group mt10">
                             <label class="find__form-sgroup">
                                 <span class="find__form-inline"><input type="text" class="find__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
@@ -82,10 +97,15 @@
                             <label class="error">인증번호를 입력하세요.</label>
                         </div>
                     </div>
+                    <!-- //찾기방법 : 이메일 선택시 -->
+                    <!-- //폼영역 -->
+
+                    <!-- 확인취소 버튼영역 -->
                     <div class="btn_wrap al_c">
                         <input class="btn btn-cancel" type="button" value="취소">
                         <input class="btn btn-primary" type="submit" value="확인">
                     </div>
+                    <!-- //확인취소 버튼영역 -->
                 </div>
 
 

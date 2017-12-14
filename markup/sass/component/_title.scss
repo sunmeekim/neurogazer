@@ -53,3 +53,13 @@
     }
   }
 }
+.modal_title {
+  border-bottom: 2px solid $C-black;
+  padding-bottom: 20px;
+  .heading_h3 {
+    font-size: 2.4rem;
+    font-weight: $F-weight-bold;
+    color: $C-font-dark;
+
+  }
+}

@@ -5,31 +5,30 @@
   padding: 40px 60px;
   background: $C-white;
 
-  .clause_wrap {
-    &+.clause_wrap {
-      margin-top: 40px;
+}
+.clause_wrap {
+  &+.clause_wrap {
+    margin-top: 40px;
+  }
+  .clause {
+    &__tit {
+      font-size: $F-size-big;
+      font-weight: $F-weight-bold;
+      color: $C-font-dark;
     }
-    .clause {
-      &__tit {
-        font-size: $F-size-big;
-        font-weight: $F-weight-bold;
-        color: $C-font-dark;
-      }
-      &__explanation {
-        margin-top: 20px;
-        font-size: $F-size-under;
-        color: $C-font-basic;
-        line-height: 1.8;
-      }
-      &__lst {
-        list-style-type:square;
-        margin-left: 20px;
-      }
-      &__lst &__item {
-
-      }
+    &__explanation {
+      margin-top: 20px;
+      font-size: $F-size-under;
+      color: $C-font-basic;
+      line-height: 1.8;
     }
+    &__lst {
+      list-style-type:square;
+      margin-left: 20px;
+    }
+    &__lst &__item {
 
+    }
   }
 
 }

@@ -372,6 +372,14 @@ i, cite, em, var, address, dfn {
 .al_r {
 	text-align: right !important;
 }
+.scroll_y {
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.scroll_x {
+	overflow: hidden;
+	overflow-x: scroll;
+}
 
 .arrow_box {
 	position: absolute;
