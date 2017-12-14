@@ -55,6 +55,7 @@
             <h2 class="title"><span class="heading_h1">1:1 문의내역</span></h2>
 
             <div class="inquire">
+
                 <div class="title_wrap">
                     <h4 class="heading_h2">고객님의 상담 및 문의사항에 대한 해결을 위해 최선을 다하겠습니다.</h4>
                     <span class="heading_btn">
@@ -64,13 +65,16 @@
 
                 <div class="inquire__lst">
                     <div class="panel">
+                        <!-- 상단 타이틀영역 -->
                         <div class="panel__header">
                             <div class="panel__inline col-md-2 al_c">번호</div>
                             <div class="panel__inline col-md-9 al_c">제목</div>
                             <div class="panel__inline col-md-1 al_c"></div>
                         </div>
+                        <!-- //상단 타이틀영역 -->
                         <div class="panel__body">
-
+                            <!-- 질문과 답변 묶음 -->
+                            <!-- [D] 답변 대기시 wait 클래스를 추가해주세요. 답변 완료시 end 클래스를 추가해주세요. -->
                             <div class="panel__wrap wait">
                                 <a href="#" class="panel__toggle">
                                     <div class="panel__inline col-md-2 al_c">번호</div>
@@ -86,8 +90,11 @@
                                 </a>
                                 <div class="panel__detail"></div>
                             </div>
+                            <!-- //질문과 답변 묶음 -->
+
+                            <!-- 질문과 답변 묶음 -->
+                            <!-- [D] 답변이 있을 경우 답변이 보고싶으면 클릭시 end 클래스 뒤에 view 클래스를 추가해주세요.  -->
                             <div class="panel__wrap end">
-                                <!--[D] view클래스 토글-->
                                 <a href="#" class="panel__toggle">
                                     <div class="panel__inline col-md-2 al_c">번호</div>
                                     <div class="panel__inline col-md-9 al_l">
@@ -123,10 +130,12 @@
                                     <div class="panel__inline col-md-1 al_c">&nbsp;</div>
                                 </div>
                             </div>
-
+                            <!-- //질문과 답변 묶음 -->
                         </div>
 
                     </div>
+
+                    <!-- [D] 공통 페이징 -->
                     <div class="pagenate mt30">
                         <div class="paging">
                             <a href="#" class="prev_link disabled"><span>PREVIOUS</span></a>
@@ -135,6 +144,7 @@
                             <a href="#" class="next_link"><span>NEXT</span></a>
                         </div>
                     </div>
+                    <!-- //[D] 공통 페이징 -->
                 </div>
             </div>
         </div>

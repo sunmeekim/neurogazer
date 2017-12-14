@@ -53,16 +53,21 @@
     <div class="container">
         <div class="contents">
             <div class="study_wrap">
+                <!-- 스텝표시 -->
                 <div class="study_step step1">
                     <span class="g_invisible">step1: 계정등록</span>
                 </div>
+                <!-- //스텝표시 -->
 
                 <div class="study">
                     <div class="study__box">
+                        <!-- 약관동의영역 -->
+                        <!-- [D] 체크박스와 라디오버튼의 경우 이미지로 되어있기때문에 input id 와 label for를 꼭 맞춰주세요. -->
                         <div class="title_wrap">
                             <h2 class="heading_h1">서비스 이용약관</h2>
                         </div>
                         <div class="study__agreement">
+                            <!-- 전체동의 영역 -->
                             <div class="form-group form__check-wrap">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement_all"/>
@@ -70,15 +75,19 @@
                                 </div>
                                 <p class="study__label-desc">아래 모든 약관내용을 확인하고 전체 동의 합니다.</p>
                             </div>
+                            <!-- //전체동의 영역 -->
+                            <!-- 서비스 이용 약관 -->
                             <div class="form-group">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement1"/>
                                     <label class="form__check-label" for="agreement1">서비스 이용 약관 <span class="required">(필수)</span></label>
                                 </div>
                                 <div class="agreement-view">
+                                    <!-- [D]전문보기 클릭시 하단에 레이어팝업을 띄워줍니다 -->
                                     <a href="#" class="agree_link">전문보기</a>
                                 </div>
                             </div>
+                            <!-- 개인정보 보호정책 -->
                             <div class="form-group">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement2"/>
@@ -88,6 +97,7 @@
                                     <a href="#" class="agree_link">전문보기</a>
                                 </div>
                             </div>
+                            <!-- 개인정보 제3자 제공동의 -->
                             <div class="form-group">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement3"/>
@@ -97,6 +107,7 @@
                                     <a href="#" class="agree_link">전문보기</a>
                                 </div>
                             </div>
+                            <!-- 연구참여 동의서 -->
                             <div class="form-group">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement4"/>
@@ -106,6 +117,7 @@
                                     <a href="#" class="agree_link">전문보기</a>
                                 </div>
                             </div>
+                            <!-- 법정 대리인 관련등 -->
                             <div class="form-group">
                                 <div class="form__checkbox">
                                     <input type="checkbox" class="g_invisible" id="agreement5"/>
@@ -116,23 +128,29 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- //약관동의영역 -->
 
+                        <!-- 개인정보입력영역 -->
                         <div class="title_wrap">
                             <h2 class="heading_h1">계정 정보</h2>
                         </div>
                         <div class="study__info">
+                            <!-- [D] 이메일 아이디 입력 -->
                             <div class="form-group">
                                 <label class="form-sgroup">
                                     <p class="form__label">이메일(아이디) <span class="required">(필수)</span></p>
                                     <span class="form-inline"><input type="text" class="form__input" style="width: 456px" placeholder="이메일(아이디)"/></span>
-                                    <!--<span class="form-inline posi_r">-->
-                                        <!--<span class="form-timer">02:00</span>-->
-                                    <!--</span>-->
                                     <span class="form-inline"><a href="#확인"  class="btn btn-primary">중복확인</a> </span>
                                 </label>
                                 <!--<label class="error">입력된 회원정보가 존재하지 않습니다. 비회원일 경우 계정등록 후 이용해주세요.</label>-->
                                 <a href="#" class="help_link"><span class="g_invisible">도움말</span></a>
+                                <div class="arrow_box" style="display: none">
+                                    [선택사항]문자메세지를
+                                    통해 검사 일정 안내를
+                                    받으실 수 있습니다.
+                                </div>
                             </div>
+                            <!-- [D] 비밀번호 입력 -->
                             <div class="form-group">
                                 <label class="form-sgroup">
                                     <p class="form__label">비밀번호 <span class="required">(필수)</span></p>
@@ -140,6 +158,7 @@
                                     <span class="form-inline"><input type="password" class="form__input" style="width: 565px" placeholder="영문(소문자), 및 숫자 조합 6~20자리 이내로 입력하세요.(특수문자제외)"/></span>
                                 </label>
                             </div>
+                            <!-- [D] 비밀번호 재입력 -->
                             <div class="form-group mt10">
                                 <label class="form-sgroup">
                                     <span class="form-inline"><input type="password" class="form__input" style="width: 565px" placeholder="영문(소문자), 및 숫자 조합 6~20자리 이내로 입력하세요.(특수문자제외)"/></span>
@@ -147,12 +166,16 @@
                                 </label>
                                 <!--<label class="error">비밀번호가 다릅니다</label>-->
                             </div>
+
+                            <!-- [D] 이름 입력 -->
                             <div class="form-group">
                                 <label class="form-sgroup">
                                     <p class="form__label">이름</p>
                                     <span class="form-inline"><input type="text" class="form__input" style="width: 565px" placeholder="이름"/></span>
                                 </label>
                             </div>
+
+                            <!-- [D] 전화번호 입력 -->
                             <div class="form-group">
 
                                 <div class="form-sgroup">
@@ -172,6 +195,7 @@
                                     받으실 수 있습니다.
                                 </div>
                             </div>
+                            <!-- [D] 인증번호 입력 -->
                             <div class="form-group mt10">
                                 <label class="form-sgroup">
                                     <span class="form-inline"><input type="text" class="form__input" style="width: 456px" placeholder="인증번호 6자리 숫자 입력"/></span>
@@ -182,6 +206,8 @@
                                 </label>
                                 <label class="error">입력된 회원정보가 존재하지 않습니다. 비회원일 경우 계정등록 후 이용해주세요.</label>
                             </div>
+
+                            <!-- [D] SMS수신동의 -->
                             <div class="form-group">
                                 <div class="form-sgroup">
                                     <p class="form__label">SMS수신 여부 <span class="required">(필수)</span></p>
@@ -198,6 +224,7 @@
                                 </div>
                             </div>
 
+                            <!-- [D] 이메일수신동의 -->
                             <div class="form-group">
                                 <div class="form-sgroup">
                                     <p class="form__label">이메일 수신 여부 <span class="required">(필수)</span></p>
@@ -214,13 +241,16 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- //개인정보입력영역 -->
                     </div>
                 </div>
+
+                <!-- 다음취소 버튼영역 -->
                 <div class="btn_wrap al_c">
                     <input class="btn btn-cancel" type="button" value="취소">
                     <input class="btn btn-primary" type="submit" value="다음">
                 </div>
-
+                <!-- //다음취소 버튼영역 -->
 
             </div>
         </div>
@@ -236,5 +266,55 @@
 </div>
     <!-- //footer_area -->
 </div>
+<!-- 레이어팝업 -->
+<div class="pop_wrap" style="display: none">
+    <div class="modal" style="width:630px;height:450px;margin:-255px 0 0 -315px">
+        <div class="modal_title">
+            <h3 class="heading_h3">서비스 이용약관</h3>
+        </div>
+        <div class="modal__body">
+            <div class="modal-agreement scroll_y" style="height: 385px">
+                <div class="clause_wrap clause">
+                    <h3 class="clause__tit">제 1 조 (목적)</h3>
+                    <div class="clause__explanation">
+                        모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여
+                        최저임금제를 시행하여야 한다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다.
+                        국가는 지역간의 균형있는 발전을 위하여 지역경제를 육성할 의무를 진다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및
+                        공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다. 국회는 국가의 예산안을 심의·확정한다. 국회의 정기회는 법률이 정하는 바에 의하여
+                        매년 1회 집회되며, 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다.
+                    </div>
+                    <div class="clause__explanation">
+                        모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여
+                        최저임금제를 시행하여야 한다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다.
+                        국가는 지역간의 균형있는 발전을 위하여 지역경제를 육성할 의무를 진다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및
+                        공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다. 국회는 국가의 예산안을 심의·확정한다. 국회의 정기회는 법률이 정하는 바에 의하여
+                        매년 1회 집회되며, 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다.
+                    </div>
+                </div>
+                <div class="clause_wrap clause">
+                    <h3 class="clause__tit">제 2 조 (정의)</h3>
+                    <div class="clause__explanation">
+                        <ul class="clause__lst">
+                            <li class="clause__item">모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며,
+                                법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다. 국가는 지역간의 균형있는 발전을 위하여 지역경제를 육성할 의무를 진다. 국가의 세입·세출의 결산, 국가 및 법률이</li>
+                            <li class="clause__item">순서1</li>
+                            <li class="clause__item">순서1</li>
+                            <li class="clause__item">순서1</li>
+                        </ul>
+                    </div>
+                    <div class="clause__explanation">
+                        모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여
+                        최저임금제를 시행하여야 한다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다.
+                        국가는 지역간의 균형있는 발전을 위하여 지역경제를 육성할 의무를 진다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및
+                        공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다. 국회는 국가의 예산안을 심의·확정한다. 국회의 정기회는 법률이 정하는 바에 의하여
+                        매년 1회 집회되며, 국회의 임시회는 대통령 또는 국회재적의원 4분의 1 이상의 요구에 의하여 집회된다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn_close"><span class="g_invisible">레이어 팝업닫기</span></a>
+    </div>
+</div>
+<!-- //레이어팝업 -->
 </body>
 </html>

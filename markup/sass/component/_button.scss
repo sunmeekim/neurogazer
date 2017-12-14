@@ -134,6 +134,12 @@
 .btn_delete {
   @include use-sprite(ico_delete);
 }
+.btn_close {
+  position: absolute;
+  right: 35px;
+  top: 30px;
+  @include use-sprite(ico_close);
+}
 .btn_wrap {
   padding: 45px 0;
   @include clear();

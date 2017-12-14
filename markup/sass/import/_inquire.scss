@@ -73,8 +73,8 @@
   .ico_arrow {
     @include use-sprite(ico_arrow_hide);
   }
-  &+.panel__detail {
-    display: block;
+  .panel__detail {
+    display: block !important;
   }
 }
 .inquire + .btn_wrap {
